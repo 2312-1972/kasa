@@ -1,24 +1,36 @@
 import logo from "../assets/LOGO.png";
-import "../style/App.css";
+import "../sass/layout.css";
+import logoFooter from "../assets/Size=Desktop.png";
 
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>{" "}
-        <h1>Hello World !!! </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="app-div-link">
+          <a
+            className="where"
+            href="App.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accueil
+          </a>
+          <a
+            className="no-where"
+            href="../public/apropos.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            A Propos
+          </a>
+        </div>
       </header>
+
+      <footer>
+        <img src={logoFooter} alt="logo-footer" />
+      </footer>
     </div>
   );
 }

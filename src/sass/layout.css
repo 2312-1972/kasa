@@ -1,18 +1,11 @@
-/* .App {
+.App {
   text-align: center;
 }
 
 .App-logo {
   height: 68px;
-  width: 210px;
-  pointer-events: none;
+  margin-left: 50px;
   color: black;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 18s linear;
-  }
 }
 
 .App-header {
@@ -24,31 +17,34 @@
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: black;
+  width: 1240px;
 }
 
-.App-link {
-  color: rgba(255, 96, 96, 1);
+.where {
+  color: rgb(255, 96, 96);
   font-size: 24px;
   font-family: "montserrat";
   font-weight: 900;
   line-height: 34px;
   text-decoration: none;
   text-align: right;
+  border-bottom: 1px solid;
 }
+
+.no-where {
+  color: rgb(255, 96, 96);
+  font-size: 24px;
+  font-family: "montserrat";
+  font-weight: 900;
+  line-height: 34px;
+  text-decoration: none;
+  text-align: right;
+  border-bottom: none;
+}
+
 .app-div-link {
   display: flex;
   width: 310px;
   height: 34px;
   justify-content: space-between;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-    scale: 30%
-  }
-  to {
-    transform: rotate(360deg);
-    scale: 50%
-  }
-} */
+}/*# sourceMappingURL=layout.css.map */
