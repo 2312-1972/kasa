@@ -1,9 +1,11 @@
-import "../sass/main.css";
-function CardsHome() {
-    return (
-<div className="gallery">
+import "..//sass/main.css";
+import LogementsComponent from "./Habitions";
 
-</div>
-    );
+function CardsHome() {
+  return (
+    <div className="cards-home">
+      <LogementsComponent />
+    </div>
+  );
 }
 export default CardsHome;

@@ -3,6 +3,7 @@ import "../sass/layout.css";
 import logoFooter from "../assets/Size=Desktop.png";
 import Rent from "./Location";
 import CardsHome from "./CardsHome";
+
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (

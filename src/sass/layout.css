@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   width: 1440px;
-  height: 1517px;
+  height: 2400px;
   margin: 15px 80px 0px 80px;
   gap: 50px;
 }
@@ -52,5 +52,7 @@
 }
 
 .app-footer {
-  margin-top: 125px;
+  position: relative;
+  top: 1050px;
+  gap: 50px;
 }/*# sourceMappingURL=layout.css.map */
