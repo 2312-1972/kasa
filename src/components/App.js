@@ -20,10 +20,11 @@ function App() {
           </a>
         </div>
       </header>
-      <div className="body-home">
-        <Rent />
-        <div className="backcards"><LogementsComponent/></div>
-      </div>
+      <div className="banner"><Rent /></div>
+    
+        
+        <div className="body-home"><LogementsComponent/></div>
+      
       
       <footer className="app-footer">
         <img src={logoFooter} alt="logo-footer" />

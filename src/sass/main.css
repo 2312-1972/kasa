@@ -52,9 +52,7 @@
 }
 
 .app-footer {
-  position: relative;
-  top: 1240px;
-  gap: 50px;
+  margin-top: 30px;
 }
 
 .mask {
@@ -64,7 +62,7 @@
 
 .body-home {
   width: 1240px;
-  height: 1400px;
+  height: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -74,15 +72,21 @@
   gap: 40px;
 }
 
+.banner {
+  margin-top: 80px;
+}
+
 .gallery {
   width: 1240px;
-  height: 1040px;
+  height: 2440px;
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
   padding-top: 20px;
+  margin-top: 30px;
+  background: rgb(246, 246, 246);
 }
 .gallery .gallery-item {
   width: 340px;
@@ -90,6 +94,7 @@
   border-radius: 10px;
   gap: 20px;
   background: rgb(255, 96, 96);
+  margin-left: 30px;
 }
 .gallery .logement-img {
   width: 300px;
