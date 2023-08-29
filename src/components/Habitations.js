@@ -6,8 +6,12 @@ const LogementsComponent = () => {
     <div className="gallery">
       {logementsData.map((logement, index) => (
         <div key={index} className="gallery-item">
-          <img src={logement.cover} alt={`Logement ${index + 1}`} />
-          <p>{logement.title}</p>
+          <img
+            className="logement-img"
+            src={logement.cover}
+            alt={`Logement ${index + 1}`}
+          />
+          <p className="title">{logement.title}</p>
         </div>
       ))}
     </div>

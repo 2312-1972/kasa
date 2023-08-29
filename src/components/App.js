@@ -1,10 +1,11 @@
 import logo from "../assets/LOGO.png";
-import "../sass/layout.css";
+import "../sass/main.css";
 import logoFooter from "../assets/Size=Desktop.png";
 import Rent from "./Location";
-import CardsHome from "./CardsHome";
+import LogementsComponent from "./Habitations";
 
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
 function App() {
   return (
     <div className="App">
@@ -21,8 +22,9 @@ function App() {
       </header>
       <div className="body-home">
         <Rent />
-        <CardsHome />
+        <div className="backcards"><LogementsComponent/></div>
       </div>
+      
       <footer className="app-footer">
         <img src={logoFooter} alt="logo-footer" />
       </footer>

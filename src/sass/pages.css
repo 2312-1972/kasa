@@ -21,19 +21,14 @@
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1fr);
   gap: 20px;
   text-align: center;
   padding-top: 20px;
 }
 
 .gallery-item img {
-  width: 240px;
-  height: auto;
+  width: 320px;
+  height: 240px;
   border-radius: 10px;
   gap: 20px;
-}
-
-.cards-home {
-  width: 1440px;
 }/*# sourceMappingURL=pages.css.map */
