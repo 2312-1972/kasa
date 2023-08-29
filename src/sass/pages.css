@@ -1,4 +1,22 @@
 .mask {
   width: 1240px;
   height: 223px;
+}
+
+.body-home {
+  width: 1240px;
+  height: 1095px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  gap: 40px;
+}
+
+.gallery {
+  width: 1240px;
+  height: 829px;
+  background: rgb(246, 246, 246);
 }/*# sourceMappingURL=pages.css.map */

@@ -1,2 +1,6 @@
 // Ce dossier contient généralement des fichiers Sass qui définissent des styles de base pour l'ensemble du projet, 
 // tels que le reset CSS, les styles de typographie globaux et d'autres styles fondamentaux.
+@mixin red-color { background: rgba(255, 96, 96, 1)
+};
+@mixin grey-color{background: rgba(246, 246, 246, 1)
+};

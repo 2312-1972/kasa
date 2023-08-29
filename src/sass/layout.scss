@@ -2,26 +2,19 @@
 // les styles de mise en page, les conteneurs, etc.
 .App {
   text-align: center;
+  width: 1440px;
+  height: 1517px;
+  margin: 15px 80px 0px 80px;
+  gap: 50px;
 }
 
-.App-logo {
-  height: 68px;
-
- margin-left: 50px;
-  color: black;
-}
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 18s linear;
-//   }
-// }
+.App-logo{ margin-right: 10px }
 
 .App-header {
   background-color: white;
-  min-height: 100vh;
+  height: 68px;
   display: flex;
-  margin: 20px 100px 20px 100px;
+  margin: 20px 60px 20px 100px;
   align-items: flex-start;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
@@ -29,7 +22,7 @@
   width: 1240px;
 }
 
- @mixin App-link {
+@mixin App-link {
   color: rgba(255, 96, 96, 1);
   font-size: 24px;
   font-family: "montserrat";
@@ -39,11 +32,11 @@
   text-align: right;
 }
 
-.where{
+.where {
   @include App-link;
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
 }
-.no-where{
+.no-where {
   @include App-link;
   border-bottom: none;
 }
@@ -52,4 +45,8 @@
   width: 310px;
   height: 34px;
   justify-content: space-between;
+}
+
+.app-footer{
+  margin-top: 125px;
 }

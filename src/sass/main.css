@@ -1,31 +1,28 @@
 .App {
   text-align: center;
+  width: 1440px;
+  height: 1517px;
+  margin: 15px 80px 0px 80px;
+  gap: 50px;
 }
 
 .App-logo {
-  height: 68px;
-  width: 210px;
-  pointer-events: none;
-  color: black;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 18s linear;
-  }
-}
 .App-header {
   background-color: white;
-  min-height: 100vh;
+  height: 68px;
   display: flex;
-  margin: 20px 100px 20px 100px;
+  margin: 20px 60px 20px 100px;
   align-items: flex-start;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: black;
+  width: 1240px;
 }
 
-.App-link {
+.where {
   color: rgb(255, 96, 96);
   font-size: 24px;
   font-family: "montserrat";
@@ -33,6 +30,18 @@
   line-height: 34px;
   text-decoration: none;
   text-align: right;
+  border-bottom: 1px solid;
+}
+
+.no-where {
+  color: rgb(255, 96, 96);
+  font-size: 24px;
+  font-family: "montserrat";
+  font-weight: 900;
+  line-height: 34px;
+  text-decoration: none;
+  text-align: right;
+  border-bottom: none;
 }
 
 .app-div-link {
@@ -40,4 +49,32 @@
   width: 310px;
   height: 34px;
   justify-content: space-between;
+}
+
+.app-footer {
+  margin-top: 125px;
+}
+
+.mask {
+  width: 1240px;
+  height: 223px;
+}
+
+.body-home {
+  width: 1240px;
+  height: 1400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  gap: 40px;
+}
+
+.gallery {
+  width: 1240px;
+  height: 1200px;
+  border-radius: 25px;
+  background: rgb(246, 246, 246);
 }/*# sourceMappingURL=main.css.map */

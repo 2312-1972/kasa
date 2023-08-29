@@ -1,10 +1,25 @@
-// fichiers Sass qui sont spécifiques à chaque page de votre application. 
+// fichiers Sass qui sont spécifiques à chaque page de votre application.
 // Chaque fichier peut contenir des styles personnalisés pour la mise en page et les éléments de chaque page.
 .mask {
-    width: 1240px;
-height: 223px;
-// top: 163px;
-// left: 100px;
+  width: 1240px;
+  height: 223px;
+}
 
-
+.body-home {
+  width: 1240px;
+  height: 1400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  gap: 40px;
+  
+}
+.gallery {
+  width: 1240px;
+  height: 1200px;
+  border-radius: 25px;
+  @include grey-color;
 }
