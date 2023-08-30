@@ -6,6 +6,9 @@
 @mixin grey-color {
   background: rgba(246, 246, 246, 1);
 }
+
+@mixin font-grey {color: rgba(255, 255, 255, 1);
+}
 @mixin title-card {
   font-family: "Montserrat";
   font-size: 16px;
@@ -17,4 +20,11 @@
   padding-bottom: 10px;
 }
 @mixin red-background {background: rgba(255, 96, 96, 1);
+}
+
+@mixin app-base{
+  text-align: center;
+  width: 1440px;
+   margin: 15px 80px 0px 80px;
+  gap: 50px;
 }

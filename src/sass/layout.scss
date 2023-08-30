@@ -1,11 +1,9 @@
 // Ce dossier est destiné aux fichiers Sass liés à la mise en page globale de l'application, comme la structure de la grille,
 // les styles de mise en page, les conteneurs, etc.
+@import "./base.scss";
 .App {
-  text-align: center;
-  width: 1440px;
+  @include app-base;
   height: 2400px;
-  margin: 15px 80px 0px 80px;
-  gap: 50px;
 }
 
 .App-logo{ margin-right: 10px }
@@ -50,5 +48,11 @@
 .app-footer{
   
   margin-top:30px ;
-  
-}
+  }
+
+  // A propos ou About components
+
+  .app-about{ 
+    @include app-base;
+    height: 952px;
+  }

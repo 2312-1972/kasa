@@ -1,5 +1,7 @@
 // fichiers Sass qui sont spécifiques à chaque page de votre application.
 // Chaque fichier peut contenir des styles personnalisés pour la mise en page et les éléments de chaque page.
+@import "./base.scss";
+
 .mask {
   width: 1240px;
   height: 223px;
@@ -16,7 +18,7 @@
   margin-left: 100px;
   gap: 40px;
 }
-.banner{
+.banner {
   margin-top: 80px;
 }
 .gallery {
@@ -29,7 +31,6 @@
   text-align: center;
   padding-top: 20px;
   margin-top: 30px;
-  
   @include grey-color;
   .gallery-item {
     width: 340px;
@@ -50,4 +51,29 @@
   }
 }
 
+.valeurs-block {
+  width: 1024px;
+  height: 298px;
+  margin: 20px 0px 20px 210px;
+  gap: 30px;
+}
 
+.valeurs {
+  width: 1024px;
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  @include red-color;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-valeur {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-left: 10px;
+  text-align: left;
+  @include font-grey;
+}

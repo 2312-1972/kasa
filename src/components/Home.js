@@ -3,8 +3,7 @@ import "../sass/main.css";
 import logoFooter from "../assets/Size=Desktop.png";
 import Rent from "./Location";
 import LogementsComponent from "./Habitations";
-
-
+// import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,17 +14,19 @@ function App() {
           <a className="where" href="App.js">
             Accueil
           </a>
-          <a className="no-where" href="../public/apropos.html">
+          <a className="no-where" href="./About.js">
             A Propos
           </a>
         </div>
       </header>
-      <div className="banner"><Rent /></div>
-    
-        
-        <div className="body-home"><LogementsComponent/></div>
-      
-      
+      <div className="banner">
+        <Rent />
+      </div>
+
+      <div className="body-home">
+        <LogementsComponent />
+      </div>
+
       <footer className="app-footer">
         <img src={logoFooter} alt="logo-footer" />
       </footer>
