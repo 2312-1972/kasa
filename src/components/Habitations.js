@@ -1,3 +1,4 @@
+import React from "react";
 import "../sass/main.css";
 import logementsData from "./logements.json";
 

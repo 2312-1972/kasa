@@ -1,3 +1,4 @@
+import React from "react";
 import MaskAbout from "../assets/Mask Group about.png";
 import "../sass/main.css";
 

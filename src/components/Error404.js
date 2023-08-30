@@ -1,4 +1,4 @@
-
+import React from "react";
 import "../sass/main.css";
 
 function Error404 (){

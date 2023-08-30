@@ -1,3 +1,4 @@
+import React from "react";
 import "../sass/main.css";
 import vector from "../assets/Vector.png";
 function BlockValeurs() {
