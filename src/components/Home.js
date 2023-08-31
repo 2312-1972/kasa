@@ -1,5 +1,5 @@
 
-// import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
 
 import logo from "../assets/LOGO.png";
@@ -14,22 +14,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-          <div className="app-div-link">
+           {/* <div className="app-div-link">
           <a className="where" href="App.js">
             Accueil
           </a>
           <a className="no-where" href="./About.js">
             A Propos
           </a>
-        </div>  
-        {/* <div className="app-div-link">
+        </div>    */}
+          <div className="app-div-link">
   <Link to="/home" className="where">
     Accueil
   </Link>
   <Link to="/about" className="no-where">
     A Propos
-  </Link>
-</div>  */}
+  </Link> 
+</div> 
 
       </header>
       <div className="banner">
