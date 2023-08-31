@@ -6,7 +6,7 @@ import React from "react";
 function Valeurs () {
     return(
 
-    <div className="valeurs-block">
+    <div className="valors-block">
         <BlockValeurs/>
         
 
