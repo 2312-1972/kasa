@@ -71,9 +71,7 @@
   margin: 20px 0px 20px 210px;
   gap: 30px;
 }
-.valeurs-block{
-  position: relative;
-}
+
 .valeurs {
   width: 1024px;
   height: 52px;
@@ -104,14 +102,14 @@
   text-align: left;
   @include font-red;
   @include grey-color;
-  height: 104px;
+  height: auto;
   padding-left: 15px;
   padding-top: 15px;
+  border-radius: 5px;
+  padding-bottom: 15px;
 }
 
-.collapse-content{
- border-radius: 5px;
+.collapse-content {
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
 }
-

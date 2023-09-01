@@ -2,14 +2,16 @@
 // tels que le reset CSS, les styles de typographie globaux et d'autres styles fondamentaux.
 @mixin red-color {
   background: rgba(255, 96, 96, 1);
-  }
-@mixin font-red {color: rgba(255, 96, 96, 1)}
+}
+@mixin font-red {
+  color: rgba(255, 96, 96, 1);
+}
 @mixin grey-color {
- background: rgba(246, 246, 246, 1)
-  
-};
+  background: rgba(246, 246, 246, 1);
+}
 
-@mixin font-grey {color: rgba(255, 255, 255, 1);
+@mixin font-grey {
+  color: rgba(255, 255, 255, 1);
 }
 @mixin title-card {
   font-family: "Montserrat";
@@ -18,18 +20,17 @@
   text-align: left;
   color: rgba(255, 255, 255, 1);
   position: relative;
- bottom: 60px;
+  bottom: 60px;
   left: 20px;
- 
 }
-@mixin red-background {background: rgba(255, 96, 96, 1);
+@mixin red-background {
+  background: rgba(255, 96, 96, 1);
 }
 
-@mixin app-base{
- 
+@mixin app-base {
   text-align: center;
   width: 1440px;
-  
-    margin: 15px 80px 0px 80px;
+
+  margin: 15px 80px 0px 80px;
   gap: 50px;
 }

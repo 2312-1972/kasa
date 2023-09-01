@@ -11,10 +11,8 @@ function Collapse({ title, text }) {
 
   const valeursStyle = {
     width: "1024px",
-    height:'52px',
-    
+    height: "52px",
   };
-
 
   return (
     <div className="valeurs-block">

@@ -6,7 +6,9 @@
   height: 2400px;
 }
 
-.App-logo{ margin-right: 10px }
+.App-logo {
+  margin-right: 10px;
+}
 
 .App-header {
   background-color: white;
@@ -45,14 +47,13 @@
   justify-content: space-between;
 }
 
-.app-footer{
+.app-footer {
+  margin-top: 50px;
+}
 
-  margin-top:50px ;
-  }
+// A propos ou About components
 
-  // A propos ou About components
-
-  .app-about{ 
-    @include app-base;
-    height: 952px;
-  }
+.app-about {
+  @include app-base;
+  height: auto;
+}
