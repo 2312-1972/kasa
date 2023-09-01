@@ -9,7 +9,7 @@ function Valeurs () {
     <div className="valors-block">
          <BlockValeurs/> 
         
-{/* <Collapse/> */}
+
 
     </div>
     )

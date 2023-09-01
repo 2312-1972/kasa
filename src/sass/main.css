@@ -146,6 +146,10 @@
   gap: 30px;
 }
 
+.valeurs-block {
+  position: relative;
+}
+
 .valeurs {
   width: 1024px;
   height: 52px;
@@ -173,9 +177,19 @@
 
 .text-collapse {
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 26px;
   text-align: left;
   color: rgb(255, 96, 96);
+  background: rgb(246, 246, 246);
+  height: 104px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.collapse-content {
+  border-radius: 5px;
+  position: relative;
+  bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
