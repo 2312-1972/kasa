@@ -1,37 +1,20 @@
-import { Link } from "react-router-dom";
-
-import logo from "../assets/LOGO.png";
 import "../sass/main.css";
-import logoFooter from "../assets/Size=Desktop.png";
 import Rent from "./Location";
 import LogementsComponent from "./Habitations";
+import Footer from "./footer";
+import Header from "./header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className="app-div-link">
-          <Link to="/home" className="where">
-            Accueil
-          </Link>
-          <Link to="/about" className="no-where">
-            A Propos
-          </Link>
-        </div>
-        
-      </header>
+      <Header />
       <div className="banner">
         <Rent />
       </div>
-
       <div className="body-home">
         <LogementsComponent />
       </div>
-
-      <footer className="app-footer">
-        <img src={logoFooter} alt="logo-footer" />
-      </footer>
+      <Footer />
     </div>
   );
 }
