@@ -88,6 +88,54 @@
   height: auto;
 }
 
+.app-404 {
+  text-align: center;
+  width: 1440px;
+  margin: 15px 80px 0px 80px;
+  gap: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app-404 .error-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.app-404 .error-section .error-title {
+  width: 597px;
+  height: 263px;
+  font-family: "Montserrat";
+  font-size: 288px;
+  font-weight: bold;
+  line-height: 411px;
+  color: rgb(255, 96, 96);
+}
+.app-404 .error-section .error-text {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 51px;
+  letter-spacing: 0em;
+  color: rgb(255, 96, 96);
+}
+
+.error-link {
+  font-family: "Montserrat";
+  color: rgb(255, 96, 96);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
 .mask {
   width: 1240px;
   height: 223px;
