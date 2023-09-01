@@ -26,7 +26,7 @@
   width: 1240px;
 }
 
-.where {
+.no-where.active {
   color: rgb(255, 96, 96);
   font-size: 24px;
   font-family: "montserrat";
@@ -34,7 +34,7 @@
   line-height: 34px;
   text-decoration: none;
   text-align: right;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 
 .no-where {
@@ -56,7 +56,28 @@
 }
 
 .app-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
+  width: 1440px;
+  height: 209px;
+  background: rgb(0, 0, 0);
+}
+
+.logo-footer {
+  width: 122px;
+  height: 40px;
+}
+
+.title-footer {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
 }
 
 .app-about {

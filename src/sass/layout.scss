@@ -32,9 +32,9 @@
   text-align: right;
 }
 
-.where {
+.no-where.active {
   @include App-link;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 .no-where {
   @include App-link;
@@ -48,9 +48,30 @@
 }
 
 .app-footer {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ margin-top: 50px;
+ width: 1440px;
+ height: 209px;
+ background: rgba(0, 0, 0, 1);
+ 
+  }
+.logo-footer{
+  width: 122px;
+height: 40px;
 }
 
+.title-footer{
+  @include font-grey;
+  font-family: "Montserrat";
+font-size: 24px;
+font-weight: 500;
+line-height: 34px;
+text-align: center;
+
+}
 // A propos ou About components
 
 .app-about {

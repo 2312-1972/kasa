@@ -2,12 +2,14 @@ import "../sass/main.css";
 import Rent from "./Location";
 import LogementsComponent from "./Habitations";
 import Footer from "./footer";
+
 import Header from "./header";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+     <Header/>
+
       <div className="banner">
         <Rent />
       </div>
