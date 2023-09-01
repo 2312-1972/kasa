@@ -1,1 +1,3 @@
-/*# sourceMappingURL=animations.css.map */
+.rotate-arrow {
+  transition: transform 0.3s ease;
+}/*# sourceMappingURL=animations.css.map */

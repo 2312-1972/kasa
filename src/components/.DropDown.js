@@ -1,26 +1,21 @@
 import React from "react";
 import "../sass/main.css";
 import vector from "../assets/Vector.png";
+import Collapse from "./collapse";
 function BlockValeurs() {
   return (
     <div>
-      <div className="valeurs">
-        <p className="title-valeur">Fiabilité</p>
-        <img src={vector} className="arrow" alt="arrow" />
-      </div>
-      <div className="valeurs">
-        <p className="title-valeur">Service</p>
-        <img src={vector} className="arrow" alt="arrow" />
-      </div>
-      <div className="valeurs">
-        <p className="title-valeur">Respect</p>
-        <img src={vector} className="arrow" alt="arrow" />
-      </div>
-      <div className="valeurs">
-        <p className="title-valeur">Sécurité</p>
-        <img src={vector} className="arrow" alt="arrow" />
-      </div>
-    </div>
+    <Collapse title="Fiabilité" text="Les annonces postées sur Kasa garantissent en fiabilité totale. Les photo sont conformes aux logements, et 
+    toutes les informations sont régulièrement vérifiées par nos équipes." />
+    <Collapse title="Service" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage
+     entraînera une exclusion de notre plateforme." />
+    <Collapse title="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa.Tout comportement discriminatoire ou de perturbation du voisinage
+     entraînera une exclusion de notre plateforme. " />
+    <Collapse title="Sécurité" text="La sécurité est la priorité de Kasa.Aussi bien pour nos hôtes que pour les voyageurs, chaque logement 
+    correspond aux critères de sécurité établis par nos services .En laisant une note aussi bien à l'hôte qu'au
+    locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.Nous organisons
+    également des ateliers sur la sécurité domestique pour nos hôtes. " />
+  </div>
   );
 }
 

@@ -2,10 +2,12 @@
 // tels que le reset CSS, les styles de typographie globaux et d'autres styles fondamentaux.
 @mixin red-color {
   background: rgba(255, 96, 96, 1);
-}
+  }
+@mixin font-red {color: rgba(255, 96, 96, 1)}
 @mixin grey-color {
-  background: rgba(246, 246, 246, 1);
-}
+ background: rgba(246, 246, 246, 1)
+  
+};
 
 @mixin font-grey {color: rgba(255, 255, 255, 1);
 }

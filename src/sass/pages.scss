@@ -98,3 +98,12 @@
 .arrow {
   margin-right: 10px;
 }
+.text-collapse {
+font-family: "Montserrat";
+font-size: 18px;
+font-weight: 600;
+line-height: 26px;
+
+text-align: left;
+@include font-red;
+}
