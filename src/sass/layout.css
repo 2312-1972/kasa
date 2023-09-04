@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
+  margin: 15px 0px 0px 0px;
   gap: 50px;
   height: 2400px;
 }
@@ -79,15 +79,13 @@
 .app-about {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
-  gap: 50px;
   height: auto;
 }
 
 .app-404 {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
+  margin: 15px 0px 0px 0px;
   gap: 50px;
   height: auto;
   display: flex;
@@ -98,8 +96,8 @@
 .app-404 .error-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  height: 320px;
+  align-items: center;
+  justify-content: center;
 }
 .app-404 .error-section .error-title {
   width: 597px;

@@ -13,7 +13,9 @@
 @mixin font-grey {
   color: rgba(255, 255, 255, 1);
 }
-@mixin font{ font-family: "Montserrat"}
+@mixin font {
+  font-family: "Montserrat";
+}
 
 @mixin title-card {
   font-family: "Montserrat";
@@ -32,6 +34,6 @@
 @mixin app-base {
   text-align: center;
   width: 1440px;
- margin: 15px 80px 0px 80px;
+  margin: 15px 0px 0px 0px;
   gap: 50px;
 }

@@ -1,8 +1,8 @@
+import React from "react";
 import "../sass/main.css";
 import Rent from "./Location";
 import LogementsComponent from "./Habitations";
 import Footer from "./footer";
-
 import Header from "./header";
 
 function App() {

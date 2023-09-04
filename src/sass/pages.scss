@@ -1,6 +1,14 @@
 // fichiers Sass qui sont spécifiques à chaque page de votre application.
 // Chaque fichier peut contenir des styles personnalisés pour la mise en page et les éléments de chaque page.
-@import "./base.scss";
+@import "./base.scss" ;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+   height: auto;
+}
 
 .mask {
   width: 1240px;

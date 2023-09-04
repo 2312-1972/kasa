@@ -11,10 +11,18 @@ function Header() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="app-div-link">
-          <Link to="/" className={`no-where ${location.pathname === '/' ? 'active' : ''}`}>
+          <Link
+            to="/"
+            className={`no-where ${location.pathname === "/" ? "active" : ""}`}
+          >
             Accueil
           </Link>
-          <Link to="/about" className={`no-where ${location.pathname === '/about' ? 'active' : ''}`}>
+          <Link
+            to="/about"
+            className={`no-where ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+          >
             À Propos
           </Link>
         </div>
@@ -24,4 +32,3 @@ function Header() {
 }
 
 export default Header;
-

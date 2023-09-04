@@ -5,7 +5,7 @@
 .App {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
+  margin: 15px 0px 0px 0px;
   gap: 50px;
   height: 2400px;
 }
@@ -83,15 +83,13 @@
 .app-about {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
-  gap: 50px;
   height: auto;
 }
 
 .app-404 {
   text-align: center;
   width: 1440px;
-  margin: 15px 80px 0px 80px;
+  margin: 15px 0px 0px 0px;
   gap: 50px;
   height: auto;
   display: flex;
@@ -103,7 +101,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 150px;
+  justify-content: center;
 }
 .app-404 .error-section .error-title {
   width: 597px;
@@ -134,6 +132,13 @@
   text-align: left;
   border-bottom: 1px solid;
   text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: auto;
 }
 
 .mask {

@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: auto;
+}
+
 .mask {
   width: 1240px;
   height: 223px;
