@@ -14,9 +14,9 @@ function App() {
       <Route path="/" element={<Home />} /> {/* Route vers la page d'accueil */}
       <Route path="/about" element={<About />} /> {/* Route vers About */}
       <Route path="/carrousel" element={<Carrousel />} />{" "}
-      {/*  /> Route vers Carrousel*/}
+      {/*   Route vers Carrousel*/}
+      <Route path="*" element={<Error404 />} />{" "}
       {/* Route générique pour gérer les erreurs 404 */}
-      <Route path="*" element={<Error404 />} /> {/*   Route vers Error404 */}
     </Routes>
   );
 }

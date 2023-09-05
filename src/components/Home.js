@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
      <Header/>
-
       <div className="banner">
         <Rent />
       </div>

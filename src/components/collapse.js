@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "../sass/main.css";
 import vector from "../assets/Vector.png";
 
-function Collapse({ title, text }) {
+function Collapse({ title, text, onCollapsibleToggle }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
+    onCollapsibleToggle(!isOpen);
   };
 
   const valeursStyle = {

@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* Styles pour les écrans entre 1024px et 1439px */
+/* Styles pour les écrans de 375px ou moins */
 .App {
   text-align: center;
   width: 1440px;
@@ -57,6 +60,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  width: 1440px;
+  height: 209px;
+  background: rgb(0, 0, 0);
+}
+
+.about-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1440px;
   height: 209px;
   background: rgb(0, 0, 0);
@@ -128,4 +141,12 @@
   text-align: left;
   border-bottom: 1px solid;
   text-decoration: none;
+}
+
+/* Styles pour les écrans entre 1024px et 1439px */
+/* Styles pour les écrans de 375px ou moins */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .App-header {
+    width: 86%;
+  }
 }/*# sourceMappingURL=layout.css.map */
