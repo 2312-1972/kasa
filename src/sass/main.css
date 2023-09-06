@@ -10,10 +10,12 @@
   width: 1440px;
   margin: 15px 0px 0px 0px;
   gap: 50px;
-  height: 2400px;
+  height: auto;
 }
 
 .App-logo {
+  width: 210px;
+  height: 68px;
   margin-right: 10px;
 }
 
@@ -22,10 +24,8 @@
   height: 68px;
   display: flex;
   margin: 20px 60px 20px 100px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
-  color: black;
   width: 1240px;
 }
 
@@ -36,8 +36,10 @@
   font-weight: 900;
   line-height: 34px;
   text-decoration: none;
-  text-align: right;
-  border-bottom: 2px solid;
+  text-align: center;
+  width: 155px;
+  -webkit-text-decoration: underline 1px solid;
+          text-decoration: underline 1px solid;
 }
 
 .no-where {
@@ -47,8 +49,9 @@
   font-weight: 900;
   line-height: 34px;
   text-decoration: none;
-  text-align: right;
-  border-bottom: none;
+  text-align: center;
+  width: 155px;
+  text-decoration: none;
 }
 
 .app-div-link {
@@ -67,6 +70,7 @@
   width: 1440px;
   height: 209px;
   background: rgb(0, 0, 0);
+  width: 155px;
 }
 
 .about-footer {
@@ -149,9 +153,16 @@
 
 /* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 768px) {
   .App-header {
-    width: 86%;
+    width: 100%;
+    height: 100%;
+  }
+  .App-logo {
+    margin-top: 30px;
+  }
+  .app-div-link {
+    padding-left: 724px;
   }
 }
 /* Styles pour les écrans entre 1024px et 1439px */
@@ -213,6 +224,15 @@ body {
   margin-top: 30px;
   background: rgb(246, 246, 246);
 }
+.gallery .gallery-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: cover;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
 .gallery .logement-img {
   width: 340px;
   height: 300px;
@@ -223,16 +243,18 @@ body {
   font-size: 16px;
   font-weight: 800;
   text-align: left;
+  width: 300px;
+  height: 52px;
   color: rgb(255, 255, 255);
   position: relative;
-  bottom: 60px;
-  left: 40px;
+  bottom: 20px;
+  left: 10px;
   z-index: 2;
 }
 
 .valors-block {
   width: 1024px;
-  height: 298px;
+  height: auto;
   margin: 20px 0px 20px 210px;
   gap: 30px;
 }
@@ -292,7 +314,7 @@ body {
 }
 /* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 768px) {
   .mask {
     width: 90%;
     height: auto;
@@ -303,7 +325,6 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     text-align: center;
     padding-top: 20px;
     margin-top: 30px;
@@ -312,18 +333,18 @@ body {
     gap: 0px;
   }
   .gallery .gallery-item {
+    margin-bottom: 30px;
+    margin-left: auto;
     width: 100%;
-    height: auto;
-    gap: 0px;
-    padding-left: 0px;
-    border: 2px solid greenyellow;
+    height: 90%;
   }
   .gallery .logement-img {
-    width: 95%;
-    border: 5px pink solid;
+    width: 100%;
     height: auto;
   }
   .gallery .title {
-    z-index: 1;
+    font-size: 250%;
+    width: 45%;
+    bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

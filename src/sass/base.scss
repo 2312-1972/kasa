@@ -17,16 +17,7 @@
   font-family: "Montserrat";
 }
 
-@mixin title-card {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 800;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  position: relative;
-  bottom: 60px;
-  left: 40px;
-}
+
 @mixin red-background {
   background: rgba(255, 96, 96, 1);
 }
@@ -38,31 +29,13 @@
   gap: 50px;
 }
 
-
-
 ///********Responsive design*****///
 
 /* Styles pour les écrans entre 1024px et 1439px */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  
 }
 
-
-
-
-
-
-
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  @mixin title-card {
-    
-    font-size: 18px;
-    font-weight: 800;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    bottom: 60px;
-    left: 20px;
-  }
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  
 }

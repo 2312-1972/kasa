@@ -6,10 +6,12 @@
   width: 1440px;
   margin: 15px 0px 0px 0px;
   gap: 50px;
-  height: 2400px;
+  height: auto;
 }
 
 .App-logo {
+  width: 210px;
+  height: 68px;
   margin-right: 10px;
 }
 
@@ -18,10 +20,8 @@
   height: 68px;
   display: flex;
   margin: 20px 60px 20px 100px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  font-size: calc(10px + 2vmin);
-  color: black;
   width: 1240px;
 }
 
@@ -32,8 +32,10 @@
   font-weight: 900;
   line-height: 34px;
   text-decoration: none;
-  text-align: right;
-  border-bottom: 2px solid;
+  text-align: center;
+  width: 155px;
+  -webkit-text-decoration: underline 1px solid;
+          text-decoration: underline 1px solid;
 }
 
 .no-where {
@@ -43,8 +45,9 @@
   font-weight: 900;
   line-height: 34px;
   text-decoration: none;
-  text-align: right;
-  border-bottom: none;
+  text-align: center;
+  width: 155px;
+  text-decoration: none;
 }
 
 .app-div-link {
@@ -63,6 +66,7 @@
   width: 1440px;
   height: 209px;
   background: rgb(0, 0, 0);
+  width: 155px;
 }
 
 .about-footer {
@@ -145,8 +149,15 @@
 
 /* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 768px) {
   .App-header {
-    width: 86%;
+    width: 100%;
+    height: 100%;
+  }
+  .App-logo {
+    margin-top: 30px;
+  }
+  .app-div-link {
+    padding-left: 724px;
   }
 }/*# sourceMappingURL=layout.css.map */

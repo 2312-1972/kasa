@@ -1,25 +1,15 @@
 import React from "react";
 import "../sass/main.css";
-import Header from "./header"
 
-import Footer from "./footer";
-function FicheLogement(){
-    return (
-    <div> 
-         <Header/> 
-
-
+import Collapse from "./collapse";
+function FicheLogement() {
+  return (
     <div>
-       <div>     </div> 
-        
-        
-        </div>     
-        <Footer/> 
-    
-    
-    
-    </div> 
-    )
+      <div>
+        <Collapse />
+      </div>
+    </div>
+  );
 }
 
 export default FicheLogement;
