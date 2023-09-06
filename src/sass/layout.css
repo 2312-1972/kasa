@@ -10,14 +10,12 @@
 }
 
 .App-logo {
-  width: 210px;
-  height: 68px;
   margin-right: 10px;
 }
 
 .App-header {
   background-color: white;
-  height: 68px;
+  height: auto;
   display: flex;
   margin: 20px 60px 20px 100px;
   align-items: center;
@@ -34,6 +32,7 @@
   text-decoration: none;
   text-align: center;
   width: 155px;
+  height: 17px;
   -webkit-text-decoration: underline 1px solid;
           text-decoration: underline 1px solid;
 }
@@ -47,6 +46,7 @@
   text-decoration: none;
   text-align: center;
   width: 155px;
+  height: 17px;
   text-decoration: none;
 }
 
@@ -66,7 +66,6 @@
   width: 1440px;
   height: 209px;
   background: rgb(0, 0, 0);
-  width: 155px;
 }
 
 .about-footer {
@@ -91,6 +90,8 @@
   font-weight: 500;
   line-height: 34px;
   text-align: center;
+  width: 513px;
+  height: 46px;
 }
 
 .app-about {
@@ -149,15 +150,34 @@
 
 /* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 350px) and (max-width: 768px) {
-  .App-header {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .App-logo {
     margin-top: 30px;
+    height: auto;
+    width: 45%;
   }
   .app-div-link {
-    padding-left: 724px;
+    width: 50%;
+    height: 101px;
+    align-items: center;
+  }
+  .logo-footer {
+    width: 14%;
+    height: 29%;
+  }
+  .title-footer {
+    width: 17%;
+    height: 32%;
+  }
+  .no-where.active {
+    font-size: 48px;
+    width: 59%;
+  }
+  .no-where {
+    font-size: 48px;
+    width: 59%;
+  }
+  .app-404 {
+    height: 1000px;
   }
 }/*# sourceMappingURL=layout.css.map */

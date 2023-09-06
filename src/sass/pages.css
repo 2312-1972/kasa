@@ -144,10 +144,15 @@ body {
 }
 /* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .mask {
     width: 90%;
     height: auto;
+  }
+  .title-banner {
+    text-align: center;
+    top: 358px;
+    left: 413px;
   }
   .gallery {
     width: 105%;
