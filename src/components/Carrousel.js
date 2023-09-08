@@ -5,28 +5,48 @@ const Carrousel = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
 
-  // On récupére les données du logement depuis les paramètres d'URL
+  // On récupère les données du logement depuis les paramètres d'URL
   const title = searchParams.get("title");
   const cover = searchParams.get("cover");
-  const situation =searchParams.get("location")
-  const rating =searchParams.get("rating")
-  //const pictures =searchParams.get("pictures")
-  const hostName =searchParams.get ("hostName")
-  const hostPicture =searchParams.get("hostPicture")
+  const situation = searchParams.get("location");
+  const rating = searchParams.get("rating");
+  const hostName = searchParams.get("hostName");
+  const hostPicture = searchParams.get("hostPicture");
+  const tags = searchParams.get("tags");
+
+  // Utilisez la méthode `split` pour convertir la chaîne de tags en un tableau de tags
+  const tagList = tags ? tags.split(",") : [];
+
   return (
-    <div>  {/* Affiche les informations utiliser du logement ici */}
-      <img src={cover} alt={title} />
-      <p> {title}</p>
-      <p>{situation}</p>
-      <p>{rating}</p>
-      <div>
-       {/* <img src= {pictures} alt={title} /> */}
+    <div className="carrousel">
+      <div className="slideshow-container">
+        <img src={cover} alt={title} />
       </div>
-    <div>
-    {hostName}
-      <img src={hostPicture} alt= {hostName}/>
-    
-    </div>
+      <div className="container-title-host">
+        {" "}
+        <div className="container-location">
+          <p className="carrousel-title"> {title}</p>
+          <p className="carrousel-location">{situation}</p>
+        </div>
+        <div className="container-host">
+          <p className="host"> {hostName}</p>
+          <img className="host-picture" src={hostPicture} alt={hostName} />
+        </div>
+      </div>
+      <div className="container-tags-rating">
+        <div className="tags">
+          {/*  map pour afficher chaque tag individuellement */}
+          {tagList.map((tag, index) => (
+            <p className="tag" key={index}>
+              {tag}
+            </p>
+          ))}
+        </div>
+        <div className="rate">
+          <p>{rating}</p>
+        </div>
+      </div>
+      <div>{/* <img src= {pictures} alt={title} /> */}</div>
     </div>
   );
 };

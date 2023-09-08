@@ -86,6 +86,8 @@
 .title-footer {
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  letter-spacing: 0em;
+  font-family: "Montserrat";
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -125,6 +127,8 @@
   font-weight: bold;
   line-height: 411px;
   color: rgb(255, 96, 96);
+  font-family: "Montserrat";
+  letter-spacing: 0em;
 }
 .app-404 .error-section .error-text {
   font-family: "Montserrat";
@@ -133,11 +137,15 @@
   line-height: 51px;
   letter-spacing: 0em;
   color: rgb(255, 96, 96);
+  font-family: "Montserrat";
+  letter-spacing: 0em;
 }
 
 .error-link {
   font-family: "Montserrat";
   color: rgb(255, 96, 96);
+  font-family: "Montserrat";
+  letter-spacing: 0em;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;

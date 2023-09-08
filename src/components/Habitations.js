@@ -9,9 +9,22 @@ const LogementsComponent = () => {
       {logementsData.map((logement, index) => (
         <div key={index} className="gallery-item">
           <Link
-            to={`/carrousel?title=${encodeURIComponent(logement.title)}&cover=${encodeURIComponent(logement.cover)}&location=${encodeURIComponent(logement.location)}
-            &rating=${encodeURIComponent(logement.rating)}&pictures=${encodeURIComponent(logement.pictures)}&hostName=${encodeURIComponent(logement.host.name)}
-            &hostPicture=${encodeURIComponent(logement.host.picture)}`}
+            to={`/carrousel?title=${encodeURIComponent(
+              logement.title
+            )}&cover=${encodeURIComponent(
+              logement.cover
+            )}&location=${encodeURIComponent(logement.location)}
+            &rating=${encodeURIComponent(
+              logement.rating
+            )}&pictures=${encodeURIComponent(
+              logement.pictures
+            )}&hostName=${encodeURIComponent(logement.host.name)}
+            &hostPicture=${encodeURIComponent(
+              logement.host.picture
+            )}&tags=${encodeURIComponent(
+              logement.tags
+            )}&equipments=${encodeURIComponent(logement.equipments)}
+            &description=${encodeURIComponent(logement.description)}`}
           >
             <img
               className="logement-img"
@@ -27,4 +40,3 @@ const LogementsComponent = () => {
 };
 
 export default LogementsComponent;
-

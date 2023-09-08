@@ -5,6 +5,8 @@
 }
 @mixin font-red {
   color: rgba(255, 96, 96, 1);
+  @include font;
+  letter-spacing: 0em;
 }
 @mixin grey-color {
   background: rgba(246, 246, 246, 1);
@@ -12,6 +14,8 @@
 
 @mixin font-grey {
   color: rgba(255, 255, 255, 1);
+  @include font;
+  letter-spacing: 0em;
 }
 @mixin font {
   font-family: "Montserrat";
@@ -28,7 +32,13 @@
   margin: 15px 0px 0px 0px;
   gap: 50px;
 }
-
+@mixin location-host{
+  font-size: 18px;
+font-weight: 800;
+line-height: 26px;
+color: rgba(255, 96, 96, 1);
+@include font;
+}
 ///********Responsive design*****///
 
 /* Styles pour les écrans entre 1024px et 1439px */
