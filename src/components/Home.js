@@ -3,6 +3,7 @@ import "../sass/main.css";
 import Rent from "./Location";
 import LogementsComponent from "./Habitations";
 
+
 function App() {
   return (
     <div className="App">

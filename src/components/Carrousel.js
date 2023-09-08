@@ -1,15 +1,21 @@
 import React from "react";
-import "../sass/main.css";
+import { useLocation } from "react-router-dom";
 
-import Collapse from "./collapse";
-function FicheLogement() {
+const Carrousel = () => {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+
+  // Récupérez les données du logement depuis les paramètres d'URL
+  const title = searchParams.get("title");
+  const cover = searchParams.get("cover");
+
   return (
     <div>
-      <div>
-        <Collapse />
-      </div>
+      <p>Titre : {title}</p>
+      <img src={cover} alt={title} />
+      {/* Affichez d'autres informations du logement ici */}
     </div>
   );
-}
+};
 
-export default FicheLogement;
+export default Carrousel;
