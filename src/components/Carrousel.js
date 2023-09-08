@@ -5,15 +5,28 @@ const Carrousel = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
 
-  // Récupérez les données du logement depuis les paramètres d'URL
+  // On récupére les données du logement depuis les paramètres d'URL
   const title = searchParams.get("title");
   const cover = searchParams.get("cover");
-
+  const situation =searchParams.get("location")
+  const rating =searchParams.get("rating")
+  //const pictures =searchParams.get("pictures")
+  const hostName =searchParams.get ("hostName")
+  const hostPicture =searchParams.get("hostPicture")
   return (
-    <div>
-      <p>Titre : {title}</p>
+    <div>  {/* Affiche les informations utiliser du logement ici */}
       <img src={cover} alt={title} />
-      {/* Affichez d'autres informations du logement ici */}
+      <p> {title}</p>
+      <p>{situation}</p>
+      <p>{rating}</p>
+      <div>
+       {/* <img src= {pictures} alt={title} /> */}
+      </div>
+    <div>
+    {hostName}
+      <img src={hostPicture} alt= {hostName}/>
+    
+    </div>
     </div>
   );
 };
