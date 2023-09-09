@@ -39,6 +39,16 @@ line-height: 26px;
 color: rgba(255, 96, 96, 1);
 @include font;
 }
+
+@mixin arrow-carrousel{
+
+width: 46px;
+height: 79px;
+color: white;
+  z-index: 2;
+  
+
+}
 ///********Responsive design*****///
 
 /* Styles pour les écrans entre 1024px et 1439px */

@@ -2,6 +2,9 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import starActive from "../assets/star-active.png";
 import starInactive from "../assets/star-inactive.png";
+import arrowLeft from "../assets/arrow left.png";
+import arrowRight from "../assets/arrow right.png";
+import Collapse from "./collapse";
 
 const Carrousel = () => {
   const location = useLocation();
@@ -39,8 +42,11 @@ const Carrousel = () => {
   return (
     <div className="carrousel">
       <div className="slideshow-container">
-        <img src={cover} alt={title} />
-      </div>
+        <img src={cover} alt={title} /> 
+        <img className="arrow-left" src={arrowLeft} alt={arrowLeft}/>
+        <img className="arrow-right" src={arrowRight} alt={arrowRight}/>
+        </div>
+       
       <div className="container-title-host">
         {" "}
         <div className="container-location">
@@ -63,7 +69,9 @@ const Carrousel = () => {
         </div>
         <div className="rate">{renderRatingStars(parseInt(rating, 10))}</div>
       </div>
-      <div>{/* <img src= {pictures} alt={title} /> */}</div>
+      <div className="collapse-logement">
+        <Collapse/>
+      </div>
     </div>
   );
 };
