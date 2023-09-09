@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import starActive from "../assets/star-active.png";
+import starInactive from "../assets/star-inactive.png";
 
 const Carrousel = () => {
   const location = useLocation();
@@ -14,9 +16,26 @@ const Carrousel = () => {
   const hostPicture = searchParams.get("hostPicture");
   const tags = searchParams.get("tags");
 
-  // Utilisez la méthode `split` pour convertir la chaîne de tags en un tableau de tags
+  // Utilisation la méthode `split` pour convertir la chaîne de tags en un tableau de tags
   const tagList = tags ? tags.split(",") : [];
 
+  // Fonction pour générer les étoiles en fonction de la note (rating)
+  const renderRatingStars = (rating) => {
+    const maxStars = 5; // Nombre total d'étoiles
+    const starElements = [];
+
+    // Boucle pour créer les étoiles actives
+    for (let i = 1; i <= rating; i++) {
+      starElements.push(<img src={starActive} alt={`Star ${i}`} key={i} />);
+    }
+
+    // Boucle pour créer les étoiles inactives (si nécessaire)
+    for (let i = rating + 1; i <= maxStars; i++) {
+      starElements.push(<img src={starInactive} alt={`Star ${i}`} key={i} />);
+    }
+
+    return starElements;
+  };
   return (
     <div className="carrousel">
       <div className="slideshow-container">
@@ -42,9 +61,7 @@ const Carrousel = () => {
             </p>
           ))}
         </div>
-        <div className="rate">
-          <p>{rating}</p>
-        </div>
+        <div className="rate">{renderRatingStars(parseInt(rating, 10))}</div>
       </div>
       <div>{/* <img src= {pictures} alt={title} /> */}</div>
     </div>

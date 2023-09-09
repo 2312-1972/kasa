@@ -255,6 +255,7 @@ body {
   display: flex;
   width: 196px;
   height: 36px;
+  gap: 15px;
   align-items: center;
 }
 

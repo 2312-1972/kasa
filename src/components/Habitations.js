@@ -9,6 +9,7 @@ const LogementsComponent = () => {
       {logementsData.map((logement, index) => (
         <div key={index} className="gallery-item">
           <Link
+          // on sécurise les données issue du map avec les paramètres d'URL pour récupération dans un autre composant
             to={`/carrousel?title=${encodeURIComponent(
               logement.title
             )}&cover=${encodeURIComponent(
