@@ -353,6 +353,10 @@ body {
   list-style-type: none;
 }
 
+.ul {
+  list-style-type: none;
+}
+
 .carrousel {
   display: flex;
   flex-direction: column;
