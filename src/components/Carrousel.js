@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import starActive from "../assets/star-active.png";
 import starInactive from "../assets/star-inactive.png";
 import arrowLeft from "../assets/arrow left.png";
 import arrowRight from "../assets/arrow right.png";
-import Collapse from "./collapse";
+import CollapseLogements from "./CollapseLogement";
+import EquipementsList from "./Equipements";
 
 const Carrousel = () => {
   const location = useLocation();
@@ -18,7 +19,8 @@ const Carrousel = () => {
   const hostName = searchParams.get("hostName");
   const hostPicture = searchParams.get("hostPicture");
   const tags = searchParams.get("tags");
-
+  const description = searchParams.get("description");
+  const equipements = searchParams.get("equipments");
   // Utilisation la méthode `split` pour convertir la chaîne de tags en un tableau de tags
   const tagList = tags ? tags.split(",") : [];
 
@@ -39,14 +41,25 @@ const Carrousel = () => {
 
     return starElements;
   };
+  // État pour suivre le nombre de collapsibles ouverts
+  const [openCollapsibleCount, setOpenCollapsibleCount] = useState(0);
+
+  const handleCollapsibleToggle = (isOpen) => {
+    if (isOpen) {
+      setOpenCollapsibleCount(openCollapsibleCount + 1);
+    } else {
+      setOpenCollapsibleCount(openCollapsibleCount - 1);
+    }
+  };
+
   return (
     <div className="carrousel">
       <div className="slideshow-container">
-        <img src={cover} alt={title} /> 
-        <img className="arrow-left" src={arrowLeft} alt={arrowLeft}/>
-        <img className="arrow-right" src={arrowRight} alt={arrowRight}/>
-        </div>
-       
+        <img src={cover} alt={title} />
+        <img className="arrow-left" src={arrowLeft} alt={arrowLeft} />
+        <img className="arrow-right" src={arrowRight} alt={arrowRight} />
+      </div>
+
       <div className="container-title-host">
         {" "}
         <div className="container-location">
@@ -70,7 +83,16 @@ const Carrousel = () => {
         <div className="rate">{renderRatingStars(parseInt(rating, 10))}</div>
       </div>
       <div className="collapse-logement">
-        <Collapse/>
+        <CollapseLogements
+          title="Description"
+          text={description}
+          onCollapsibleToggle={handleCollapsibleToggle}
+        />
+        <CollapseLogements
+          title="Equipements"
+          text={<EquipementsList equipements={equipements} />}
+          onCollapsibleToggle={handleCollapsibleToggle}
+        />
       </div>
     </div>
   );

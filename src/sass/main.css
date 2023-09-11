@@ -339,7 +339,18 @@ body {
 }
 
 .collapse-logement {
-  margin-top: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse-content-logements {
+  position: relative;
+  bottom: 30px;
+  width: 582px;
+  height: auto;
+  text-align: left;
+  list-style-type: none;
 }
 
 .carrousel {
