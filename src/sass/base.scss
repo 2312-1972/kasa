@@ -40,14 +40,13 @@ color: rgba(255, 96, 96, 1);
 @include font;
 }
 
-@mixin arrow-carrousel{
-
-width: 46px;
-height: 79px;
-color: white;
-  z-index: 2;
-  
-
+@mixin container-arrow{
+  width: 96px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 ///********Responsive design*****///
 

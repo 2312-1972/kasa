@@ -13,7 +13,6 @@ function CollapseLogements({ title, text, onCollapsibleToggle }) {
   const valeursStyle = {
     width: "582px",
     height: "52px",
-   
   };
 
   return (

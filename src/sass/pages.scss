@@ -140,15 +140,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.collapse-content-logements{
+.collapse-content-logements {
   position: relative;
   bottom: 30px;
   width: 582px;
   height: auto;
   text-align: left;
- list-style-type: none;
+  list-style-type: none;
 }
-.ul{   list-style-type: none;
+.ul {
+  list-style-type: none;
 }
 .carrousel {
   display: flex;
@@ -160,7 +161,7 @@ body {
   .slideshow-container {
     width: 1225px;
     height: 415px;
-
+    position: relative;
     border-radius: 25px;
     overflow: hidden;
   }
@@ -169,13 +170,38 @@ body {
     height: 100%;
     object-fit: cover;
   }
-
-  .arrow-left {
-    @include arrow-carrousel;
-  }
-  .arrow-right {
-    @include arrow-carrousel;
-  }
+}
+.container-arrow-left {
+  @include container-arrow;
+  left: 1120px;
+  top: 158px;
+}
+.container-arrow-right {
+  @include container-arrow;
+  left: 12px;
+  top: 158px;
+}
+.arrow-left,
+.arrow-right {
+  width: 48px;
+  height: 80px;
+  color: white;
+}
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+.countdown {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 4px;
+  @include font-grey;
+  font-weight: 600;
 }
 .container-title-host {
   display: flex;
