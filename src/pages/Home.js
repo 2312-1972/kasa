@@ -1,8 +1,7 @@
 import React from "react";
 import "../sass/main.css";
-import Rent from "./Location";
-import LogementsComponent from "./Habitations";
-
+import Rent from "../components/Location";
+import LogementsComponent from "../components/Logements";
 
 function App() {
   return (

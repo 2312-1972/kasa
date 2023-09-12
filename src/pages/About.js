@@ -1,8 +1,8 @@
 // import React, { useState } from "react";
 import "../sass/main.css";
-import BannerAbout from "./BannerApropos";
+import BannerAbout from "../components/BannerApropos";
 
-import BlockValeurs from "./Valeurs";
+import BlockValeurs from "../components/Valeurs";
 
 function About() {
   return (

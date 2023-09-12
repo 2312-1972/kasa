@@ -2,10 +2,10 @@ import React from "react";
 
 import "./style/index.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Error404 from "./components/Error404";
-import Carrousel from "./components/Carrousel";
+import Carrousel from "./pages/Carrousel";
 import Header from "./components/header";
 import Footer from "./components/footer";
 

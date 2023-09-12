@@ -38,6 +38,7 @@ body {
   text-align: left;
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
   position: absolute;
   top: 220px;
@@ -56,32 +57,38 @@ body {
   margin-top: 30px;
   background: rgb(246, 246, 246);
 }
-.gallery .gallery-item {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-size: cover;
+
+.gallery-item {
   width: 340px;
   height: 340px;
   border-radius: 10px;
   margin-bottom: 20px;
   margin-left: 30px;
 }
-.gallery .logement-img {
+
+.logement-img {
+  position: relative;
   width: 340px;
-  height: 300px;
+  height: 340px;
   border-radius: 10px;
 }
-.gallery .title {
+
+.title {
+  color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  text-decoration: none;
+  letter-spacing: 0em;
   font-size: 16px;
   font-weight: 800;
   text-align: left;
-  width: 300px;
-  height: 52px;
-  color: rgb(255, 255, 255);
+  width: 330px;
+  height: 42px;
   position: relative;
-  bottom: 20px;
-  left: 10px;
-  z-index: 2;
+  bottom: 70px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
 }
 
 .valors-block {
@@ -111,6 +118,7 @@ body {
   text-align: left;
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
 }
 
@@ -126,6 +134,7 @@ body {
   text-align: left;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
   background: rgb(246, 246, 246);
   height: auto;
@@ -224,6 +233,7 @@ body {
   border-radius: 4px;
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
   font-weight: 600;
   font-size: 18px;
@@ -253,6 +263,7 @@ body {
   line-height: 26px;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
+  text-decoration: none;
   text-align: right;
   width: 93px;
   height: 52px;
@@ -273,12 +284,14 @@ body {
   width: auto;
   height: 51px;
   font-family: "Montserrat";
+  text-decoration: none;
   font-size: 36px;
   font-weight: 800;
   line-height: 51px;
   text-align: left;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
   margin-top: 30px;
 }
@@ -288,6 +301,7 @@ body {
   line-height: 26px;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
+  text-decoration: none;
   width: auto;
   height: auto;
   text-align: left;
@@ -316,6 +330,7 @@ body {
   background: rgb(255, 96, 96);
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
+  text-decoration: none;
   letter-spacing: 0em;
   font-size: 14px;
   font-weight: 600;
@@ -375,8 +390,10 @@ body {
     height: auto;
   }
   .gallery .title {
-    font-size: 250%;
-    width: 45%;
-    bottom: 40px;
+    font-size: 32px;
+    width: 99%;
+    height: 71px;
+    margin-top: -19px;
+    padding-left: 10px;
   }
 }/*# sourceMappingURL=pages.css.map */

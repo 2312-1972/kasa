@@ -51,39 +51,39 @@ body {
   padding-top: 20px;
   margin-top: 30px;
   @include grey-color;
+}
 
-  .gallery-item {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-    background-size: cover;
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-  }
-  .logement-img {
-    width: 340px;
-    height: 300px;
-    border-radius: 10px;
-  }
+.gallery-item {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
 
-  .title {
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 800;
-    text-align: left;
-    width: 300px;
-    height: 52px;
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    bottom: 20px;
-    left: 10px;
-    z-index: 2;
-  }
+.logement-img {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+.title {
+  @include font-grey;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  width: 330px;
+  height: 42px;
+  position: relative;
+  bottom: 70px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 10px;
 }
 
 .valors-block {
@@ -337,13 +337,14 @@ body {
     }
     .logement-img {
       width: 100%;
-
       height: auto;
     }
     .title {
-      font-size: 250%;
-      width: 45%;
-      bottom: 40px;
+      font-size: 32px;
+      width: 99%;
+      height: 71px;
+      margin-top: -19px;
+      padding-left: 10px;
     }
   }
 }

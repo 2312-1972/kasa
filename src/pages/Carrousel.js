@@ -1,41 +1,39 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import starActive from "../assets/star-active.png";
-// import starInactive from "../assets/star-inactive.png";
 import arrowRight from "../assets/arrow right.png";
-import  arrowLeft from "../assets/arrow left.png";
-import CollapseLogements from "./CollapseLogement";
-import CollapseEquipements from "./CollapseEquipements"
-import EquipementsList from "./Equipements";
-import Title from "./Title";
-import Tags from "./Tags";
-import Host from "./Hosts";
-import Rating from "./Rating"
+import arrowLeft from "../assets/arrow left.png";
+import CollapseLogements from "../components/CollapseLogement";
+import CollapseEquipements from "../components/CollapseEquipements";
+import EquipementsList from "../components/Equipements";
+import Title from "../components/Title";
+import Tags from "../components/Tags";
+import Host from "../components/Hosts";
+import Rating from "../components/Rating";
+import logementsData from "../components/logements.json";
+
 const Carrousel = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
+  const id = searchParams.get("id");
 
-  // On récupère les données du logement depuis les paramètres d'URL
-  const title = searchParams.get("title");
-  const description = searchParams.get("description");
-  const equipements = searchParams.get("equipments");
-  const pictures = searchParams.get("pictures");
+  // Vérifiez si l'ID correspond à un logement
+  const logement = logementsData.find((logement) => logement.id === id);
 
-  
-  // État pour suivre le nombre de collapsibles ouverts
+  // Assurez-vous de déclarer les variables nécessaires
   const [openCollapsibleCount, setOpenCollapsibleCount] = useState(0);
-
-  const handleCollapsibleToggle = (isOpen) => {
-    if (isOpen) {
-      setOpenCollapsibleCount(openCollapsibleCount + 1);
-    } else {
-      setOpenCollapsibleCount(openCollapsibleCount - 1);
-    }
-  };
-
-  // Récupére les images du logement actuel depuis le tableau "pictures"
-  const picturesArray = pictures ? pictures.split(",") : [];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  let picturesArray = [];
+  let title = "";
+  let description = "";
+  let equipements = "";
+
+  // Mettez à jour les variables si un logement est trouvé
+  if (logement) {
+    picturesArray = logement.pictures;
+    title = logement.title;
+    description = logement.description;
+    equipements = logement.equipements;
+  }
 
   // Gestionnaire d'événement pour passer à l'image précédente
   const goToPreviousImage = () => {
@@ -51,10 +49,20 @@ const Carrousel = () => {
     );
   };
 
-  // Utilisation de  "useEffect" pour mettre à jour l'image actuelle lorsque le logement change
+  // Gestionnaire d'événement pour les collapsibles
+  const handleCollapsibleToggle = (isOpen) => {
+    if (isOpen) {
+      setOpenCollapsibleCount(openCollapsibleCount + 1);
+    } else {
+      setOpenCollapsibleCount(openCollapsibleCount - 1);
+    }
+  };
+
+  // Utilisation de "useEffect" pour mettre à jour l'image actuelle lorsque le logement change
   useEffect(() => {
     setCurrentImageIndex(0); // Réinitialise l'index de l'image lorsqu'un nouveau logement est affiché
-  }, [pictures]);
+  }, [id]);
+
 
   return (
     <div className="carrousel">
