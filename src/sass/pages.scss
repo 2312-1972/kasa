@@ -183,8 +183,6 @@ body {
 }
 .arrow-left,
 .arrow-right {
-  width: 48px;
-  height: 80px;
   color: white;
 }
 .arrow-left {
@@ -202,6 +200,10 @@ body {
   border-radius: 4px;
   @include font-grey;
   font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .container-title-host {
   display: flex;

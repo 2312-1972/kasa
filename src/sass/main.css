@@ -379,8 +379,8 @@ body {
 }
 
 .container-arrow-left {
-  width: 96px;
-  height: 120px;
+  width: 60px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,8 +390,8 @@ body {
 }
 
 .container-arrow-right {
-  width: 96px;
-  height: 120px;
+  width: 60px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,8 +402,6 @@ body {
 
 .arrow-left,
 .arrow-right {
-  width: 48px;
-  height: 80px;
   color: white;
 }
 
@@ -426,6 +424,10 @@ body {
   font-family: "Montserrat";
   letter-spacing: 0em;
   font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .container-title-host {
