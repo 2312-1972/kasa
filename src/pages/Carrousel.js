@@ -25,8 +25,10 @@ const Carrousel = () => {
   let title = "";
   let description = "";
   let equipments = "";
-  let hostName = ""; // Ajoutez une variable pour le nom de l'hôte
-  let hostPicture = ""; // Ajoutez une variable pour l'image de l'hôte
+  let hostName = ""; 
+  let hostPicture = ""; 
+  let situation ="";
+  
 
   // Mise à jour les variables si un logement est trouvé
   if (logement) {
@@ -34,8 +36,11 @@ const Carrousel = () => {
     title = logement.title;
     description = logement.description;
     equipments = logement.equipments;
-    hostName = logement.host.name; // Obtenez le nom de l'hôte à partir des données du logement
-    hostPicture = logement.host.picture; // Obtenez l'image de l'hôte à partir des données du logement
+    hostName = logement.host.name; 
+    hostPicture = logement.host.picture; 
+   situation =logement.location;
+  
+
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -119,7 +124,7 @@ const Carrousel = () => {
 
       <div className="container-title-host">
         <div className="container-location">
-          <Title/>
+          <Title title={title} location={situation}/>
          </div>
         <div className="container-host">
         <Hosts hostName={hostName} hostPicture={hostPicture} />
