@@ -6,7 +6,7 @@ import CollapseLogements from "../components/CollapseLogement";
 import CollapseEquipements from "../components/CollapseEquipements";
 import Title from "../components/Title";
 import Tags from "../components/Tags";
-import Hosts from "../components/Hosts"
+import Hosts from "../components/Hosts";
 import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
 
@@ -25,10 +25,10 @@ const Carrousel = () => {
   let title = "";
   let description = "";
   let equipments = "";
-  let hostName = ""; 
-  let hostPicture = ""; 
-  let situation ="";
-  
+  let hostName = "";
+  let hostPicture = "";
+  let situation = "";
+  let tags = "";
 
   // Mise à jour les variables si un logement est trouvé
   if (logement) {
@@ -36,11 +36,10 @@ const Carrousel = () => {
     title = logement.title;
     description = logement.description;
     equipments = logement.equipments;
-    hostName = logement.host.name; 
-    hostPicture = logement.host.picture; 
-   situation =logement.location;
-  
-
+    hostName = logement.host.name;
+    hostPicture = logement.host.picture;
+    situation = logement.location;
+    tags = logement.tags;
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -71,71 +70,73 @@ const Carrousel = () => {
     setCurrentImageIndex(0); // Réinitialise l'index de l'image lorsqu'un nouveau logement est affiché
   }, [id]);
 
-
   let equipmentList = [];
 
-  // s'assure  que equipments est un tableau
+  // on s'assure  que equipments est un tableau
   if (Array.isArray(equipments)) {
     // Utilisation de  la méthode join pour convertir le tableau en une chaîne de caractères avec des virgules
-    const equipmentsString = equipments.join(', ');
+    const equipmentsString = equipments.join(", ");
 
     // Utilisation de la méthode split pour diviser la chaîne de caractères en une liste d'équipements
-    equipmentList = equipmentsString.split(',').map((equipment, index) => (
-      <li className='ul' key={index}>{equipment.trim()}</li>
+    equipmentList = equipmentsString.split(",").map((equipment, index) => (
+      <li className="ul" key={index}>
+        {equipment.trim()}
+      </li>
     ));
   }
 
-  
+
+
   return (
     <div className="carrousel">
       <div className="slideshow-container">
-    {/* Condition pour afficher les conteneurs de flèches uniquement s'il y a plus d'une image */}
-    {picturesArray.length > 1 && (
-        <>
-          <div className="container-arrow-left">
-            <img
-              className="arrow-left"
-              src={arrowLeft}
-              alt={arrowLeft}
-              onClick={goToPreviousImage}
-            />
-          </div>
-          <div className="container-arrow-right">
-            <img
-              className="arrow-right"
-              src={arrowRight}
-              alt={arrowRight}
-              onClick={goToNextImage}
-            />
-          </div>
-        </>
-      )}
+        {/* Condition pour afficher les conteneurs de flèches uniquement s'il y a plus d'une image */}
+        {picturesArray.length > 1 && (
+          <>
+            <div className="container-arrow-left">
+              <img
+                className="arrow-left"
+                src={arrowLeft}
+                alt={arrowLeft}
+                onClick={goToPreviousImage}
+              />
+            </div>
+            <div className="container-arrow-right">
+              <img
+                className="arrow-right"
+                src={arrowRight}
+                alt={arrowRight}
+                onClick={goToNextImage}
+              />
+            </div>
+          </>
+        )}
 
-      {/* Affiche l'image actuelle en utilisant currentImageIndex */}
-      <img src={picturesArray[currentImageIndex]} alt={title} />
+        {/* Affiche l'image actuelle en utilisant currentImageIndex */}
+        <img src={picturesArray[currentImageIndex]} alt={title} />
 
-    {/* Décompte des images en sens inverse */}
-    {picturesArray.length > 1 && (
-        <div className="countdown ">
-          {picturesArray.length - currentImageIndex}/{picturesArray.length}
-        </div>
-      )}
-   </div>
+        {/* Décompte des images en sens inverse */}
+        {picturesArray.length > 1 && (
+          <div className="countdown ">
+            {picturesArray.length - currentImageIndex}/{picturesArray.length}
+          </div>
+        )}
+      </div>
 
       <div className="container-title-host">
         <div className="container-location">
-          <Title title={title} location={situation}/>
-         </div>
+          <Title title={title} location={situation} />
+        </div>
         <div className="container-host">
-        <Hosts hostName={hostName} hostPicture={hostPicture} />
+          <Hosts hostName={hostName} hostPicture={hostPicture} />
         </div>
       </div>
       <div className="container-tags-rating">
         <div className="tags">
-         <Tags/>  
+        <Tags tags={tags} />
         </div>
-        <Rating/>
-       </div>
+        <Rating />
+      </div>
       <div className="collapse-logement">
         <CollapseLogements
           title="Description"
