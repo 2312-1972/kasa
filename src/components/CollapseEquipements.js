@@ -10,14 +10,9 @@ function CollapseLogements({ title, text, onCollapsibleToggle }) {
     onCollapsibleToggle(!isOpen);
   };
 
-  const valeursStyle = {
-    width: "582px",
-    height: "52px",
-  };
-
   return (
     <div className="valeurs-block">
-      <div className="valeurs" style={valeursStyle}>
+      <div className="logement-valeur">
         <p className="title-valeur">{title}</p>
         <img
           src={vector}

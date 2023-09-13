@@ -120,8 +120,18 @@ body {
   align-items: center;
 }
 
+.logement-valeur {
+  width: 582px;
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  background: rgb(255, 96, 96);
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title-valeur {
-  font-family: "Montserrat";
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
@@ -138,7 +148,6 @@ body {
 }
 
 .text-collapse {
-  font-family: "Montserrat";
   font-size: 19px;
   font-weight: 600;
   line-height: 26px;
@@ -177,6 +186,7 @@ body {
 
 .ul {
   list-style-type: none;
+  margin-left: 0;
 }
 
 .carrousel {
@@ -365,7 +375,6 @@ body {
     max-width: 1440px; /* Largeur maximale du contenu */
   }
 }
-/* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .mask {
@@ -401,10 +410,42 @@ body {
     height: auto;
   }
   .gallery .title {
-    font-size: 32px;
+    font-size: 34px;
     width: 99%;
     height: 71px;
     margin-top: -19px;
     padding-left: 10px;
+  }
+  .valors-block {
+    width: 90%;
+    margin: 50px 0px 50px 70px;
+  }
+  .valeurs-block {
+    width: 100%;
+  }
+  .valeurs {
+    width: 100%;
+    height: auto;
+  }
+  .logement-valeur {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  .title-valeur {
+    font-size: 30px;
+  }
+  .text-collapse {
+    font-size: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+  }
+  .collapse-logement {
+    flex-direction: column;
+  }
+  .collapse-content-logements {
+    width: 100%;
+    height: auto;
   }
 }/*# sourceMappingURL=pages.css.map */

@@ -33,6 +33,17 @@
   margin: 15px 0px 0px 0px;
   gap: 50px;
 }
+
+@mixin base-valeur{
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  @include red-color;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @mixin location-host{
   font-size: 18px;
 font-weight: 800;
