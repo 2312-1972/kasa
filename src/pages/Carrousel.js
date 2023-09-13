@@ -29,7 +29,7 @@ const Carrousel = () => {
   let hostPicture = "";
   let situation = "";
   let tags = "";
-
+  let rating ="";
   // Mise à jour les variables si un logement est trouvé
   if (logement) {
     picturesArray = logement.pictures;
@@ -40,6 +40,7 @@ const Carrousel = () => {
     hostPicture = logement.host.picture;
     situation = logement.location;
     tags = logement.tags;
+    rating =logement.rating;
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -135,7 +136,7 @@ const Carrousel = () => {
         <div className="tags">
         <Tags tags={tags} />
         </div>
-        <Rating />
+        <Rating rating={rating} />
       </div>
       <div className="collapse-logement">
         <CollapseLogements

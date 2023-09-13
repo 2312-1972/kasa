@@ -1,13 +1,8 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import starActive from "../assets/star-active.png";
 import starInactive from "../assets/star-inactive.png";
-const Rating = () => {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  // On récupère les données du logement depuis les paramètres d'URL
-  const rating = searchParams.get("rating");
-  // Utilisation de la méthode `split` pour convertir la chaîne de tags en un tableau de tags
+
+const Rating = ({ rating }) => {
   const renderRatingStars = (rating) => {
     const maxStars = 5; // Nombre total d'étoiles
     const starElements = [];
