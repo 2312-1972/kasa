@@ -4,10 +4,9 @@ import arrowRight from "../assets/arrow right.png";
 import arrowLeft from "../assets/arrow left.png";
 import CollapseLogements from "../components/CollapseLogement";
 import CollapseEquipements from "../components/CollapseEquipements";
-//import EquipementsList from "../components/Equipements";
 import Title from "../components/Title";
 import Tags from "../components/Tags";
-import Host from "../components/Hosts";
+import Hosts from "../components/Hosts"
 import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
 
@@ -26,13 +25,17 @@ const Carrousel = () => {
   let title = "";
   let description = "";
   let equipments = "";
+  let hostName = ""; // Ajoutez une variable pour le nom de l'hôte
+  let hostPicture = ""; // Ajoutez une variable pour l'image de l'hôte
 
-  // Mettez à jour les variables si un logement est trouvé
+  // Mise à jour les variables si un logement est trouvé
   if (logement) {
     picturesArray = logement.pictures;
     title = logement.title;
     description = logement.description;
     equipments = logement.equipments;
+    hostName = logement.host.name; // Obtenez le nom de l'hôte à partir des données du logement
+    hostPicture = logement.host.picture; // Obtenez l'image de l'hôte à partir des données du logement
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -66,12 +69,12 @@ const Carrousel = () => {
 
   let equipmentList = [];
 
-  // Assurez-vous que equipments est un tableau
+  // s'assure  que equipments est un tableau
   if (Array.isArray(equipments)) {
-    // Utilisez la méthode join pour convertir le tableau en une chaîne de caractères avec des virgules
+    // Utilisation de  la méthode join pour convertir le tableau en une chaîne de caractères avec des virgules
     const equipmentsString = equipments.join(', ');
 
-    // Utilisez la méthode split pour diviser la chaîne de caractères en une liste d'équipements
+    // Utilisation de la méthode split pour diviser la chaîne de caractères en une liste d'équipements
     equipmentList = equipmentsString.split(',').map((equipment, index) => (
       <li className='ul' key={index}>{equipment.trim()}</li>
     ));
@@ -119,7 +122,7 @@ const Carrousel = () => {
           <Title/>
          </div>
         <div className="container-host">
-          <Host/>
+        <Hosts hostName={hostName} hostPicture={hostPicture} />
         </div>
       </div>
       <div className="container-tags-rating">
