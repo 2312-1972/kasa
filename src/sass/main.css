@@ -480,7 +480,7 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-top: -30px;
+  margin-top: 27px;
 }
 .container-host .host {
   font-size: 18px;
