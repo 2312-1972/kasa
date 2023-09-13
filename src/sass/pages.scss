@@ -92,7 +92,7 @@ body {
   margin: 20px 0px 20px 210px;
   gap: 30px;
 }
-.equipments.block{
+.equipments.block {
   width: 582px;
   height: 52px;
   border-radius: 5px;
@@ -105,14 +105,13 @@ body {
 
 .valeurs {
   width: 1024px;
-@include base-valeur;
+  @include base-valeur;
 }
-.logement-valeur{
-width: 582px;
-@include base-valeur;
+.logement-valeur {
+  width: 582px;
+  @include base-valeur;
 }
 .title-valeur {
-  
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
@@ -124,7 +123,6 @@ width: 582px;
   margin-right: 10px;
 }
 .text-collapse {
-  
   font-size: 19px;
   font-weight: 600;
   line-height: 26px;
@@ -144,7 +142,7 @@ width: 582px;
 }
 
 .collapse-logement {
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -217,6 +215,7 @@ width: 582px;
 }
 .container-title-host {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: auto;
   width: 1220px;
@@ -271,8 +270,26 @@ width: 582px;
 .container-tags-rating {
   display: flex;
   width: auto;
-  height: 25px;
-  justify-content: space-between;
+  height: auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: absolute;
+  top: 500px;
+  left: 1180px;
+  gap: 56px;
+  flex-direction: column;
+}
+.container-tags {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: absolute;
+  top: 500px;
+  left: 1180px;
+  gap: 56px;
+  flex-direction: column;
 }
 .tags {
   width: auto;
@@ -280,6 +297,9 @@ width: 582px;
   display: flex;
   gap: 10px;
   align-items: center;
+  position: absolute;
+
+  margin-top: 60px;
 }
 
 .tag {
@@ -311,8 +331,6 @@ width: 582px;
   }
 }
 ///********Responsive design*****///
-
-
 
 /* Styles pour les écrans de 375px ou moins */
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -354,41 +372,40 @@ width: 582px;
       margin-top: -19px;
       padding-left: 10px;
     }
-     }
-  
+  }
+
   .valors-block {
     width: 90%;
     margin: 50px 0px 50px 70px;
   }
-.valeurs-block{
-  width: 100%;
-}
- 
-.valeurs{
-  width: 100%;
-  height: auto;
-}
-.logement-valeur{
-  width: 100%;
-  height:auto;
-  margin-top: 30px;
-}
-   .title-valeur{
-font-size: 30px;
-}   
-.text-collapse{
-  font-size:28px;
-  padding-left: 40px;
-  padding-right: 40px;
-  line-height: 1.5;
-}
+  .valeurs-block {
+    width: 100%;
+  }
 
-.collapse-logement{
-  flex-direction: column;
-}
-.collapse-content-logements{
-  width: 100%;
-  height: auto;
-  
-}
+  .valeurs {
+    width: 100%;
+    height: auto;
+  }
+  .logement-valeur {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  .title-valeur {
+    font-size: 30px;
+  }
+  .text-collapse {
+    font-size: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.5;
+  }
+
+  .collapse-logement {
+    flex-direction: column;
+  }
+  .collapse-content-logements {
+    width: 100%;
+    height: auto;
+  }
 }

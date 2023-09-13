@@ -136,13 +136,13 @@ const Carrousel = () => {
         <div className="container-location">
           <Title title={title} location={situation} />
         </div>
-        <div className="container-host">
-          <Hosts hostName={hostName} hostPicture={hostPicture} />
+        <div className="tags">
+          <Tags tags={tags} />
         </div>
       </div>
       <div className="container-tags-rating">
-        <div className="tags">
-          <Tags tags={tags} />
+         <div className="container-host">
+          <Hosts hostName={hostName} hostPicture={hostPicture} />
         </div>
         <Rating rating={rating} />
       </div>

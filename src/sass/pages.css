@@ -170,7 +170,7 @@ body {
 }
 
 .collapse-logement {
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -265,6 +265,7 @@ body {
 
 .container-title-host {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: auto;
   width: 1220px;
@@ -332,8 +333,27 @@ body {
 .container-tags-rating {
   display: flex;
   width: auto;
-  height: 25px;
-  justify-content: space-between;
+  height: auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: absolute;
+  top: 500px;
+  left: 1180px;
+  gap: 56px;
+  flex-direction: column;
+}
+
+.container-tags {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: absolute;
+  top: 500px;
+  left: 1180px;
+  gap: 56px;
+  flex-direction: column;
 }
 
 .tags {
@@ -342,6 +362,8 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  position: absolute;
+  margin-top: 60px;
 }
 
 .tag {

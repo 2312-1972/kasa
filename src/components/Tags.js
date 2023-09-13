@@ -2,7 +2,7 @@ import React from "react";
 
 const Tags = ({ tags }) => {
   return (
-    <div className="container-tags-rating">
+    <div className="container-title-host">
       <div className="tags">
         {/* map pour afficher chaque tag individuellement */}
         {tags.map((tag, index) => (
