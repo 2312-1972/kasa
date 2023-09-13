@@ -9,6 +9,7 @@ import Tags from "../components/Tags";
 import Hosts from "../components/Hosts";
 import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
+import Error404 from "./Error404"; // Assurez-vous que le chemin vers Error404 est correct
 
 const Carrousel = () => {
   const location = useLocation();
@@ -84,6 +85,11 @@ const Carrousel = () => {
         {equipment.trim()}
       </li>
     ));
+  }
+
+  if (!logement) {
+    // Si l'ID n'existe pas, redirigez vers Error404
+    return <Error404 />;
   }
 
   return (
