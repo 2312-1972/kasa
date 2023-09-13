@@ -92,6 +92,16 @@ body {
   margin: 20px 0px 20px 210px;
   gap: 30px;
 }
+.equipments.block{
+  width: 582px;
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  @include red-color;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .valeurs {
   width: 1024px;

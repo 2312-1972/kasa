@@ -98,6 +98,17 @@ body {
   gap: 30px;
 }
 
+.equipments.block {
+  width: 582px;
+  height: 52px;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  background: rgb(255, 96, 96);
+  justify-content: space-between;
+  align-items: center;
+}
+
 .valeurs {
   width: 1024px;
   height: 52px;

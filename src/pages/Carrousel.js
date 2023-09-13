@@ -4,7 +4,7 @@ import arrowRight from "../assets/arrow right.png";
 import arrowLeft from "../assets/arrow left.png";
 import CollapseLogements from "../components/CollapseLogement";
 import CollapseEquipements from "../components/CollapseEquipements";
-import EquipementsList from "../components/Equipements";
+//import EquipementsList from "../components/Equipements";
 import Title from "../components/Title";
 import Tags from "../components/Tags";
 import Host from "../components/Hosts";
@@ -25,14 +25,14 @@ const Carrousel = () => {
   let picturesArray = [];
   let title = "";
   let description = "";
-  let equipements = "";
+  let equipments = "";
 
   // Mettez à jour les variables si un logement est trouvé
   if (logement) {
     picturesArray = logement.pictures;
     title = logement.title;
     description = logement.description;
-    equipements = logement.equipements;
+    equipments = logement.equipments;
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -64,6 +64,20 @@ const Carrousel = () => {
   }, [id]);
 
 
+  let equipmentList = [];
+
+  // Assurez-vous que equipments est un tableau
+  if (Array.isArray(equipments)) {
+    // Utilisez la méthode join pour convertir le tableau en une chaîne de caractères avec des virgules
+    const equipmentsString = equipments.join(', ');
+
+    // Utilisez la méthode split pour diviser la chaîne de caractères en une liste d'équipements
+    equipmentList = equipmentsString.split(',').map((equipment, index) => (
+      <li className='ul' key={index}>{equipment.trim()}</li>
+    ));
+  }
+
+  
   return (
     <div className="carrousel">
       <div className="slideshow-container">
@@ -122,7 +136,7 @@ const Carrousel = () => {
         />
         <CollapseEquipements
           title="Equipements"
-          text={<EquipementsList equipements={equipements} />}
+          text={<ul>{equipmentList}</ul>}
           onCollapsibleToggle={handleCollapsibleToggle}
         />
       </div>
