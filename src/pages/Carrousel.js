@@ -29,8 +29,8 @@ const Carrousel = () => {
   let hostPicture = "";
   let situation = "";
   let tags = "";
-  let rating ="";
-  // Mise à jour les variables si un logement est trouvé
+  let rating = "";
+  // Mise à jour des variables si un logement est trouvé
   if (logement) {
     picturesArray = logement.pictures;
     title = logement.title;
@@ -40,7 +40,7 @@ const Carrousel = () => {
     hostPicture = logement.host.picture;
     situation = logement.location;
     tags = logement.tags;
-    rating =logement.rating;
+    rating = logement.rating;
   }
 
   // Gestionnaire d'événement pour passer à l'image précédente
@@ -71,8 +71,8 @@ const Carrousel = () => {
     setCurrentImageIndex(0); // Réinitialise l'index de l'image lorsqu'un nouveau logement est affiché
   }, [id]);
 
+  //liste des équipements pour affichage sous forme de liste dans le collapse
   let equipmentList = [];
-
   // on s'assure  que equipments est un tableau
   if (Array.isArray(equipments)) {
     // Utilisation de  la méthode join pour convertir le tableau en une chaîne de caractères avec des virgules
@@ -86,8 +86,6 @@ const Carrousel = () => {
     ));
   }
 
-
-
   return (
     <div className="carrousel">
       <div className="slideshow-container">
@@ -99,7 +97,7 @@ const Carrousel = () => {
                 className="arrow-left"
                 src={arrowLeft}
                 alt={arrowLeft}
-                onClick={goToPreviousImage}
+                onClick={goToNextImage}
               />
             </div>
             <div className="container-arrow-right">
@@ -107,7 +105,7 @@ const Carrousel = () => {
                 className="arrow-right"
                 src={arrowRight}
                 alt={arrowRight}
-                onClick={goToNextImage}
+                onClick={goToPreviousImage}
               />
             </div>
           </>
@@ -119,7 +117,11 @@ const Carrousel = () => {
         {/* Décompte des images en sens inverse */}
         {picturesArray.length > 1 && (
           <div className="countdown ">
-            {picturesArray.length - currentImageIndex}/{picturesArray.length}
+            {picturesArray.length > 1 && (
+              <div>
+                {currentImageIndex + 1}/{picturesArray.length}
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -134,7 +136,7 @@ const Carrousel = () => {
       </div>
       <div className="container-tags-rating">
         <div className="tags">
-        <Tags tags={tags} />
+          <Tags tags={tags} />
         </div>
         <Rating rating={rating} />
       </div>
