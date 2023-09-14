@@ -60,6 +60,16 @@ color: rgba(255, 96, 96, 1);
   align-items: center;
   position: absolute;
 }
+
+@mixin base-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 209px;
+  background: rgba(0, 0, 0, 1);
+}
 ///********Responsive design*****///
 
 /* Styles pour les écrans entre 1024px et 1439px */
