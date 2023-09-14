@@ -480,7 +480,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0em;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
@@ -648,11 +648,11 @@ body {
     margin-bottom: 30px;
     margin-left: auto;
     width: 100%;
-    height: 90%;
+    height: 100%;
   }
   .gallery .logement-img {
     width: 100%;
-    height: 90%;
+    height: 100%;
   }
   .gallery .title {
     font-size: 45px;
@@ -662,6 +662,10 @@ body {
     padding-left: 10px;
     bottom: 138px;
     left: 15px;
+  }
+  .gallery-item::before {
+    width: 100%;
+    height: 89%;
   }
   .container-location .carrousel-title {
     width: auto;
@@ -675,21 +679,17 @@ body {
     margin-top: 20px;
   }
   .carrousel .slideshow-container {
-    width: 100%;
-    height: 100%;
+    height: 713px;
   }
-  .gallery-item::before {
-    width: 100%;
-    height: 89%;
+  .carrousel .container-arrow-left {
+    top: 320px;
+    left: 1150px;
   }
-  .container-arrow-left {
-    top: 350px;
-  }
-  .container-arrow-right {
-    top: 350px;
+  .carrousel .container-arrow-right {
+    top: 320px;
   }
   .countdown {
-    font-size: 24px;
+    font-size: 32px;
   }
   .valors-block {
     width: 90%;
@@ -726,7 +726,7 @@ body {
     height: auto;
   }
   .container-tags-rating {
-    top: 1330px;
+    top: 1240px;
     left: 96px;
     width: 1137px;
     justify-content: space-between;
@@ -761,6 +761,7 @@ body {
     height: auto;
     gap: 20px;
     align-items: flex-start;
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
