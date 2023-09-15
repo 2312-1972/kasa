@@ -129,7 +129,7 @@
   height: 263px;
   font-family: "Montserrat";
   font-size: 288px;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 411px;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
@@ -141,7 +141,7 @@
   font-size: 36px;
   font-weight: 600;
   line-height: 51px;
-  letter-spacing: 0em;
+  letter-spacing: 0.1em;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
   text-decoration: none;
@@ -200,6 +200,35 @@
   }
   .app-404 {
     height: 1000px;
+  }
+  .app-404 {
+    height: auto;
+  }
+  .app-404 .error-section .error-title {
+    width: 597px;
+    height: 263px;
+    font-weight: 800;
+    font-size: 288px;
+  }
+  .app-404 .error-section .error-text {
+    letter-spacing: 0.02em;
+    font-size: 63px;
+    width: 67%;
+    line-height: 1.6em;
+    margin-top: 300px;
+    font-weight: 900;
+    word-spacing: 15px;
+    text-align: center;
+  }
+  .error-link {
+    margin-top: 300px;
+    color: rgb(255, 96, 96);
+    font-family: "Montserrat";
+    text-decoration: none;
+    letter-spacing: 0em;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 200px;
   }
 }
 /* Styles pour les écrans entre 1024px et 1439px */
@@ -271,13 +300,14 @@ body {
   border-radius: 10px;
   position: relative; /*.gallery-item est positionné relativement */
   text-decoration: none;
+  margin-left: 30px;
 }
 
 .gallery-item::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -621,10 +651,10 @@ body {
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .mask {
     width: 90%;
-    height: 100%;
+    height: 410px;
   }
   .title-banner {
-    top: 309px;
+    top: 400px;
     height: auto;
     left: 118px;
     font-size: 61px;
@@ -693,14 +723,17 @@ body {
   }
   .valors-block {
     width: 90%;
-    margin: 50px 0px 50px 70px;
+    margin: 70px 0px 50px 70px;
+    padding-bottom: 50px;
   }
   .valeurs-block {
     width: 100%;
+    margin-top: 70px;
   }
   .valeurs {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
   .logement-valeur {
     width: 100%;

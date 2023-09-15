@@ -53,11 +53,10 @@
 .app-footer {
   @include base-footer;
   margin-top: 50px;
- 
 }
 
 .about-footer {
-@include base-footer;
+  @include base-footer;
 }
 .logo-footer {
   width: 122px;
@@ -80,7 +79,6 @@
   text-align: center;
   width: 1440px;
   height: auto;
-
 }
 
 .app-404 {
@@ -102,7 +100,7 @@
       height: 263px;
       font-family: "Montserrat";
       font-size: 288px;
-      font-weight: bold;
+      font-weight: 800;
       line-height: 411px;
       @include font-red;
     }
@@ -111,7 +109,7 @@
       font-size: 36px;
       font-weight: 600;
       line-height: 51px;
-      letter-spacing: 0em;
+      letter-spacing: 0.1em;
       @include font-red;
     }
   }
@@ -149,9 +147,7 @@
     align-items: center;
   }
   .app-footer {
-   height: 700px;
-    
-   
+    height: 700px;
   }
   .logo-footer {
     width: 32%;
@@ -159,9 +155,8 @@
     margin-top: 170px;
   }
   .title-footer {
-    
-      width: 16%;
-      height: 23%;
+    width: 16%;
+    height: 23%;
   }
   .no-where.active {
     font-size: 48px;
@@ -173,9 +168,43 @@
   }
 
   .app-404 {
-    
     height: 1000px;
-   }
+  }
   
-   
+  .app-404 {
+    
+    height: auto;
+    
+  
+    .error-section {
+     
+  
+      .error-title {
+        width: 597px;
+        height: 263px;
+        font-weight: 800;
+        font-size: 288px;
+       
+      }
+      .error-text {
+        letter-spacing: 0.02em;
+        font-size: 63px;
+        width: 67%;
+       line-height: 1.6em;
+        margin-top: 300px;
+        font-weight: 900;
+        word-spacing: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  
+  .error-link {
+    margin-top: 300px;
+    @include font-red;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 200px;
+  }
 }

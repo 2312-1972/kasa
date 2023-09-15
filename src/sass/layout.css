@@ -125,7 +125,7 @@
   height: 263px;
   font-family: "Montserrat";
   font-size: 288px;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 411px;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
@@ -137,7 +137,7 @@
   font-size: 36px;
   font-weight: 600;
   line-height: 51px;
-  letter-spacing: 0em;
+  letter-spacing: 0.1em;
   color: rgb(255, 96, 96);
   font-family: "Montserrat";
   text-decoration: none;
@@ -196,5 +196,34 @@
   }
   .app-404 {
     height: 1000px;
+  }
+  .app-404 {
+    height: auto;
+  }
+  .app-404 .error-section .error-title {
+    width: 597px;
+    height: 263px;
+    font-weight: 800;
+    font-size: 288px;
+  }
+  .app-404 .error-section .error-text {
+    letter-spacing: 0.02em;
+    font-size: 63px;
+    width: 67%;
+    line-height: 1.6em;
+    margin-top: 300px;
+    font-weight: 900;
+    word-spacing: 15px;
+    text-align: center;
+  }
+  .error-link {
+    margin-top: 300px;
+    color: rgb(255, 96, 96);
+    font-family: "Montserrat";
+    text-decoration: none;
+    letter-spacing: 0em;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 200px;
   }
 }/*# sourceMappingURL=layout.css.map */

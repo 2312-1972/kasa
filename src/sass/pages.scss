@@ -59,13 +59,14 @@ body {
   border-radius: 10px;
   position: relative; /*.gallery-item est positionné relativement */
   text-decoration: none;
+  margin-left: 30px;
 }
 
 .gallery-item::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -349,10 +350,10 @@ body {
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .mask {
     width: 90%;
-    height: 100%;
+    height: 410px;
   }
   .title-banner {
-    top: 309px;
+    top: 400px;
     height: auto;
     left: 118px;
     font-size: 61px;
@@ -391,7 +392,7 @@ body {
       left: 15px;
     }
   }
-.gallery-item::before {
+  .gallery-item::before {
     width: 100%;
     height: 89%;
   }
@@ -411,7 +412,7 @@ body {
     }
   }
   .carrousel {
-     .slideshow-container {
+    .slideshow-container {
       height: 713px;
     }
     .container-arrow-left {
@@ -427,15 +428,18 @@ body {
   }
   .valors-block {
     width: 90%;
-    margin: 50px 0px 50px 70px;
+    margin: 70px 0px 50px 70px;
+    padding-bottom: 50px;
   }
   .valeurs-block {
     width: 100%;
+    margin-top: 70px;
   }
 
   .valeurs {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
   .logement-valeur {
     width: 100%;
@@ -503,5 +507,5 @@ body {
     align-items: flex-start;
     margin-top: 70px;
     margin-left: 5px;
-    }
+  }
 }
