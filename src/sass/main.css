@@ -289,7 +289,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 30px;
   background: rgb(246, 246, 246);
 }
@@ -679,10 +680,12 @@ body {
     margin-left: auto;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
   }
   .gallery .logement-img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
   }
   .gallery .title {
     font-size: 45px;
