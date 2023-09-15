@@ -11,7 +11,7 @@ function CollapseLogements({ title, text, onCollapsibleToggle }) {
   };
 
   return (
-    <div className="valeurs-block">
+    <div className="valeurs-block-logements">
       <div className="logement-valeur">
         <p className="title-valeur">{title}</p>
         <img

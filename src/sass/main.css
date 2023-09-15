@@ -730,6 +730,9 @@ body {
     width: 100%;
     margin-top: 70px;
   }
+  .valeurs-block-logements {
+    width: 100%;
+  }
   .valeurs {
     width: 100%;
     height: auto;
