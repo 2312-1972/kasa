@@ -1,3 +1,6 @@
 @charset "UTF-8";
-/* Styles pour les écrans entre 1024px et 1439px */
+ul {
+  padding-inline-start: 5px;
+}
+
 /* Styles pour les écrans de 375px ou moins *//*# sourceMappingURL=base.css.map */

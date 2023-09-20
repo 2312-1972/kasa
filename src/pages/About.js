@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+
 import "../sass/main.css";
 import BannerAbout from "../components/BannerApropos";
 

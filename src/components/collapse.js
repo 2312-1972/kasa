@@ -10,12 +10,8 @@ function Collapse({ title, text, onCollapsibleToggle }) {
     onCollapsibleToggle(!isOpen);
   };
 
-  // const valeursStyle = {
-  //   width: "1024px",
-  //   height: "52px",
-  // };
-
-  return (
+  
+return (
     <div className="valeurs-block">
       <div className="valeurs" >
         <p className="title-valeur">{title}</p>

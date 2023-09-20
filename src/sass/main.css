@@ -3,7 +3,10 @@
   transition: transform 0.3s ease;
 }
 
-/* Styles pour les écrans entre 1024px et 1439px */
+ul {
+  padding-inline-start: 5px;
+}
+
 /* Styles pour les écrans de 375px ou moins */
 .App {
   text-align: center;
@@ -168,7 +171,6 @@
   text-decoration: none;
 }
 
-/* Styles pour les écrans entre 1024px et 1439px */
 /* Styles pour les écrans de 375px ou moins */
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .App-logo {
@@ -244,11 +246,15 @@
     line-height: 1em;
   }
 }
-/* Styles pour les écrans entre 1024px et 1439px */
+ul {
+  padding-inline-start: 5px;
+}
+
 /* Styles pour les écrans de 375px ou moins */
-/* Styles pour les écrans entre 1024px et 1439px */
-/* Styles pour les écrans de 375px ou moins */
-/* Styles pour les écrans entre 1024px et 1439px */
+ul {
+  padding-inline-start: 5px;
+}
+
 /* Styles pour les écrans de 375px ou moins */
 body {
   margin: 0;
@@ -312,7 +318,7 @@ body {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  position: relative; /*.gallery-item est positionné relativement */
+  position: relative;
   text-decoration: none;
   margin-left: 30px;
 }
@@ -326,7 +332,7 @@ body {
   height: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
-  z-index: 1; /* Le filtau-dessus de l'image */
+  z-index: 1; /* Le filtre au-dessus de l'image */
 }
 
 .logement-img {

@@ -58,7 +58,7 @@ body {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  position: relative; /*.gallery-item est positionné relativement */
+  position: relative; 
   text-decoration: none;
   margin-left: 30px;
 }
@@ -76,7 +76,7 @@ body {
     rgba(0, 0, 0, 0.5) 100%
   );
   border-radius: 10px;
-  z-index: 1; /* Le filtau-dessus de l'image */
+  z-index: 1; /* Le filtre au-dessus de l'image */
 }
 
 .logement-img {

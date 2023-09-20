@@ -9,17 +9,17 @@ import Tags from "../components/Tags";
 import Hosts from "../components/Hosts";
 import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
-import Error404 from "./Error404"; // Assurez-vous que le chemin vers Error404 est correct
+import Error404 from "./Error404"; 
 
 const Carrousel = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const id = searchParams.get("id");
 
-  // Vérifiez si l'ID correspond à un logement
+  // Vérification si l'ID correspond à un logement
   const logement = logementsData.find((logement) => logement.id === id);
 
-  // Assurez-vous de déclarer les variables nécessaires
+  
   const [openCollapsibleCount, setOpenCollapsibleCount] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   let picturesArray = [];

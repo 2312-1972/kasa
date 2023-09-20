@@ -22,6 +22,7 @@
   text-decoration: none;
 }
 
+ul { padding-inline-start: 5px};
 
 @mixin red-background {
   background: rgba(255, 96, 96, 1);
@@ -72,9 +73,7 @@ color: rgba(255, 96, 96, 1);
 }
 ///********Responsive design*****///
 
-/* Styles pour les écrans entre 1024px et 1439px */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-}
+
 
 /* Styles pour les écrans de 375px ou moins */
 @media screen and (min-width: 300px) and (max-width: 768px) {
