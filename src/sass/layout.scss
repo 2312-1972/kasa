@@ -112,6 +112,9 @@
       letter-spacing: 0.1em;
       @include font-red;
     }
+    .error-text-mob{
+      display: none;
+    }
   }
 }
 .error-link {
@@ -184,17 +187,23 @@
         height: 263px;
         font-weight: 800;
         font-size: 288px;
-       
+       margin-bottom: 500px;
       }
       .error-text {
+       
+        display: none;
+      }
+      .error-text-mob{
         letter-spacing: 0.02em;
         font-size: 63px;
         width: 67%;
        line-height: 1.6em;
-        margin-top: 300px;
+        margin-top: 500px;
         font-weight: 900;
         word-spacing: 15px;
         text-align: center;
+        @include font-red;
+        display: contents;
       }
     }
   }

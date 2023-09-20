@@ -147,6 +147,9 @@
   text-decoration: none;
   letter-spacing: 0em;
 }
+.app-404 .error-section .error-text-mob {
+  display: none;
+}
 
 .error-link {
   font-family: "Montserrat";
@@ -209,16 +212,25 @@
     height: 263px;
     font-weight: 800;
     font-size: 288px;
+    margin-bottom: 500px;
   }
   .app-404 .error-section .error-text {
+    display: none;
+  }
+  .app-404 .error-section .error-text-mob {
     letter-spacing: 0.02em;
     font-size: 63px;
     width: 67%;
     line-height: 1.6em;
-    margin-top: 300px;
+    margin-top: 500px;
     font-weight: 900;
     word-spacing: 15px;
     text-align: center;
+    color: rgb(255, 96, 96);
+    font-family: "Montserrat";
+    text-decoration: none;
+    letter-spacing: 0em;
+    display: contents;
   }
   .error-link {
     margin-top: 300px;
