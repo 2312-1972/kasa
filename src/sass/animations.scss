@@ -2,5 +2,6 @@
 // De même, ce dossier peut contenir des fichiers Sass pour les transitions CSS.
 
 .rotate-arrow {
+  transform: rotate(-180°);
   transition: transform 0.3s ease;
 }

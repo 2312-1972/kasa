@@ -9,7 +9,7 @@ const LogementsComponent = () => {
       {logementsData.map((logement) => (
         <Link
           key={logement.id}
-          to={`/carrousel?id=${logement.id}`} // Spécifie la destination du lien
+          to={`/logement?id=${logement.id}`} // Spécifie la destination du lien
           className="gallery-item"
         >
           <div className="logement-img-container">

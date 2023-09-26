@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../sass/main.css";
 import vector from "../assets/Vector.png";
 
-function Collapse({ title, text, onCollapsibleToggle }) {
+function Collapse({ title, text, onCollapsibleToggle, valeursBlockClassName, valeursClassName, collapseContentClassName }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -10,10 +10,9 @@ function Collapse({ title, text, onCollapsibleToggle }) {
     onCollapsibleToggle(!isOpen);
   };
 
-  
-return (
-    <div className="valeurs-block">
-      <div className="valeurs" >
+  return (
+    <div className={`valeurs-block ${valeursBlockClassName}`}>
+      <div className={`valeurs ${valeursClassName}`}>
         <p className="title-valeur">{title}</p>
         <img
           src={vector}
@@ -27,7 +26,7 @@ return (
         />
       </div>
       {isOpen && (
-        <div className="collapse-content">
+        <div className={`collapse-content ${collapseContentClassName}`}>
           <p className="text-collapse">{text}</p>
         </div>
       )}

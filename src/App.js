@@ -1,16 +1,17 @@
 import React from "react";
 
 import "./style/index.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,  } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
-import Carrousel from "./pages/Carrousel";
+import Logement from "./pages/Logement";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
 //configuration des routes
 function App() {
+
   return (
     <>
       {" "}
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />{" "}
         {/* Route vers la page d'accueil */}
         <Route path="/about" element={<About />} /> {/* Route vers About */}
-        <Route path="/carrousel" element={<Carrousel />} />{" "}
+        <Route path="/logement" element={<Logement />} />{" "}
         {/*   Route vers Carrousel*/}
         <Route path="*" element={<Error404 />} />{" "}
         {/* Route générique pour gérer les erreurs 404 */}

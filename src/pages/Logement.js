@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import arrowRight from "../assets/arrow right.png";
 import arrowLeft from "../assets/arrow left.png";
-import CollapseLogements from "../components/CollapseLogement";
-import CollapseEquipements from "../components/CollapseEquipements";
+//import CollapseLogements from "../components/CollapseLogement";
+//import CollapseEquipements from "../components/CollapseEquipements";
 import Title from "../components/Title";
 import Tags from "../components/Tags";
 import Hosts from "../components/Hosts";
 import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
-import Error404 from "./Error404"; 
-
+import Error404 from "./Error404";
+import Collapse from "../components/collapse";
 const Carrousel = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -19,7 +19,6 @@ const Carrousel = () => {
   // Vérification si l'ID correspond à un logement
   const logement = logementsData.find((logement) => logement.id === id);
 
-  
   const [openCollapsibleCount, setOpenCollapsibleCount] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   let picturesArray = [];
@@ -85,7 +84,7 @@ const Carrousel = () => {
         {equipment.trim()}
       </li>
     ));
-  }
+  } //  "trim"Supprime les espaces blancs de début et de fin et les caractères de fin de ligne d'une chaîne.
 
   if (!logement) {
     // Si l'ID n'existe pas, redirigez vers Error404
@@ -120,7 +119,7 @@ const Carrousel = () => {
         {/* Affiche l'image actuelle en utilisant currentImageIndex */}
         <img src={picturesArray[currentImageIndex]} alt={title} />
 
-        {/* Décompte des images en sens inverse */}
+        {/* Décompte des images */}
         {picturesArray.length > 1 && (
           <div className="countdown ">
             {picturesArray.length > 1 && (
@@ -141,21 +140,27 @@ const Carrousel = () => {
         </div>
       </div>
       <div className="container-tags-rating">
-         <div className="container-host">
+        <div className="container-host">
           <Hosts hostName={hostName} hostPicture={hostPicture} />
         </div>
         <Rating rating={rating} />
       </div>
       <div className="collapse-logement">
-        <CollapseLogements
+        <Collapse
           title="Description"
           text={description}
           onCollapsibleToggle={handleCollapsibleToggle}
+          valeursBlockClassName="valeurs-block-logements"
+          valeursClassName="logement-valeur"
+          collapseContentClassName="collapse-content-logements"
         />
-        <CollapseEquipements
+       <Collapse
           title="Equipements"
-          text={<ul>{equipmentList}</ul>}
+          text={equipmentList}
           onCollapsibleToggle={handleCollapsibleToggle}
+          valeursBlockClassName="valeurs-block-logements"
+          valeursClassName="logement-valeur"
+          collapseContentClassName="collapse-content-logements"
         />
       </div>
     </div>

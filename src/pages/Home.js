@@ -1,7 +1,7 @@
 import React from "react";
 import "../sass/main.css";
 import Rent from "../components/Location";
-import LogementsComponent from "../components/Logements";
+import LogementsComponent from "../components/LogementsComponent";
 
 function App() {
   return (
