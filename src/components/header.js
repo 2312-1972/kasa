@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import logo from "../assets/LOGO.png";
 import "../sass/main.css";
 
 function Header() {
-  const location = useLocation();
+  const { id } = useParams();
 
   return (
     <div>
@@ -12,17 +12,15 @@ function Header() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="app-div-link">
           <NavLink
-            exact // Utilisation de  l'attribut "exact" pour correspondre exactement à la route "/"
+            exact
             to="/"
-            className={`no-where ${location.pathname === "/" ? "active" : ""}`}
+            className={`no-where ${id === undefined ? "active" : ""}`}
           >
             Accueil
           </NavLink>
           <NavLink
             to="/about"
-            className={`no-where ${
-              location.pathname === "/about" ? "active" : ""
-            }`}
+            className={`no-where ${id === "about" ? "active" : ""}`}
           >
             À Propos
           </NavLink>
