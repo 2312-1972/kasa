@@ -194,10 +194,13 @@ ul {
   .no-where.active {
     font-size: 48px;
     width: 59%;
+    text-transform: uppercase;
+    line-height: 1;
   }
   .no-where {
     font-size: 48px;
     width: 59%;
+    text-transform: uppercase;
   }
   .app-404 {
     height: 1000px;

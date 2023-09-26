@@ -1,3 +1,5 @@
+@charset "UTF-8";
 .rotate-arrow {
+  transform: rotate(-180°);
   transition: transform 0.3s ease;
 }/*# sourceMappingURL=animations.css.map */

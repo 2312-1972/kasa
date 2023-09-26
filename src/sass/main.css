@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .rotate-arrow {
+  transform: rotate(-180°);
   transition: transform 0.3s ease;
 }
 
@@ -198,10 +199,13 @@ ul {
   .no-where.active {
     font-size: 48px;
     width: 59%;
-  }
+    text-transform: uppercase;
+
+    }
   .no-where {
     font-size: 48px;
     width: 59%;
+    text-transform: uppercase;
   }
   .app-404 {
     height: 1000px;
