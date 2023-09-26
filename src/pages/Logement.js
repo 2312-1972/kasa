@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import arrowRight from "../assets/arrow right.png";
 import arrowLeft from "../assets/arrow left.png";
-//import CollapseLogements from "../components/CollapseLogement";
-//import CollapseEquipements from "../components/CollapseEquipements";
+
 import Title from "../components/Title";
 import Tags from "../components/Tags";
 import Hosts from "../components/Hosts";
@@ -11,10 +10,9 @@ import Rating from "../components/Rating";
 import logementsData from "../components/logements.json";
 import Error404 from "./Error404";
 import Collapse from "../components/collapse";
-const Carrousel = () => {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const id = searchParams.get("id");
+
+const Logements = () => {
+  const { id } = useParams(); // Utilisation de  useParams pour extraire l'ID de l'URL
 
   // Vérification si l'ID correspond à un logement
   const logement = logementsData.find((logement) => logement.id === id);
@@ -154,7 +152,7 @@ const Carrousel = () => {
           valeursClassName="logement-valeur"
           collapseContentClassName="collapse-content-logements"
         />
-       <Collapse
+        <Collapse
           title="Equipements"
           text={equipmentList}
           onCollapsibleToggle={handleCollapsibleToggle}
@@ -167,4 +165,4 @@ const Carrousel = () => {
   );
 };
 
-export default Carrousel;
+export default Logements;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import de Link
+import { Link } from "react-router-dom";
 import "../sass/main.css";
 import logementsData from "./logements.json";
 
@@ -9,7 +9,7 @@ const LogementsComponent = () => {
       {logementsData.map((logement) => (
         <Link
           key={logement.id}
-          to={`/logement?id=${logement.id}`} // Spécifie la destination du lien
+          to={`/logement/${logement.id}`} // Utilisation de  /logement/:id
           className="gallery-item"
         >
           <div className="logement-img-container">
